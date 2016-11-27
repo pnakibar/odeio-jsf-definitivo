@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://getbootstrap.com/examples/theme/ -->
+<html lang="pt">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Beerzeit</title>
+  <!-- Latest compiled and minified CSS
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+-->
+  <!-- Optional theme
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+-->
+  <link rel="stylesheet" href="css/my.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/recipe.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+
+  <style type="text/css">
+    * {
+      text-shadow: transparent 0px 0px 0px, rgba(0, 0, 0, 0.68) 0px 0px 0px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Fixed navbar -->
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Beerzeit <small>@borgebeermaker</small></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Timeline</a></li>
+            <li class="active"><a href="recipeslist.html">Receitas</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="me.html">Perfil</a></li>
+            <li><a href="config.html">Configurações</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="login.xhtml">Sair</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+  </header>
+
+  <main class="container" id="article">
+    <article>
+      <h1>Atomic Pale Ale</h1>
+      <h2>@borgebeermaker</h2>
+      <span class="recipe-stars">
+        <i id="star-1" class="fa fa-star star"></i>
+        <i id="star-2" class="fa fa-star star"></i>
+        <i id="star-3" class="fa fa-star star"></i>
+        <i id="star-4" class="fa fa-star star"></i>
+        <i id="star-5" class="fa fa-star-o star"></i>
+      </span>
+      <img class="img-responsive" src="img/atomic.jpg" alt="Receita atomix pale ale" />
+      <section>
+        <h3>Descrição:</h3>
+        <p>
+          A fine upstanding young American known as Jeff Renner (nerenner@umich.edu) wrote at great length about his " ***Great Success in Recreating Classic American Pilsner , a Shamefully Neglected Style!***" . I too read Dr. Fix's article with great interest
+          and formulated a recipe for a "corn beer'. I loved it. My thirsty freeloading friends loved it. And I agree with Jeff that red blooded Americans should learn to love it again. This recipe is a direct adaptation from the Brewing Techniques article
+          by Dr. Fix.
+        </p>
+        <h4>Estilo:</h4>
+        <p>
+          Ultra Pale Ale
+        </p>
+        <h4>Estatísticas:</h4>
+        <ul>
+          <li>OG: 1,056 – 1,075</li>
+          <li>FG: 1010 – 1018</li>
+          <li>IBU: 40-70</li>
+          <li>SRM: 6 – 15</li>
+          <li>ABV: 5,5% a 7,5%</li>
+        </ul>
+        <h3>Receita:</h3>
+        <h4>Ingredientes:</h4>
+        <ul>
+          <li>5.00 lb. Flaked Maize</li>
+          <li>17.00 lb. Pale Ale</li>
+          <li>1.25 oz. Chinook 13.9% 60 min</li>
+          <li>2.25 oz. N. Brewer 7.9% 30 min</li>
+          <li>1.00 oz. Tettnanger 6.2% 15 min</li>
+          <li>Bavarian lager yeast</li>
+        </ul>
+        <h4>Produção:</h4>
+        <p>
+          Mash schedule = 95 for 15 min., 122 for 30 min., 138 for 15 min., 154 for 45 min., mash out for 15 min. at 164.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="fixed-action-btn kc_fab_main_btn" data-toggle="modal" data-target="#myModal">+</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Nova Postagem</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <textarea placeholder="O que está acontecendo?" class="form-control" rows="5" id="new-comment"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary enviar-new-comment" data-dismiss="modal">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /container -->
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src=js/jquery.min.js></script>
+  <script src=js/myindex.js></script>
+  <script src=js/recipe.js></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+  </script>
+</body>
+
+</html>

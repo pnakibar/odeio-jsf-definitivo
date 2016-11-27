@@ -1,0 +1,67 @@
+.container:before {
+  content: "";
+  position: fixed;
+  left: -5px;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  display: center;
+  background-image: url('http://weknowyourdreams.com/images/beer/beer-06.jpg');
+  width: 110%;
+  height: 110%;
+  margin: -5px;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.myborder {
+  border-color: #F44336 !important;
+}
+
+.myheading {
+  background-color: #F44336 !important;
+}
+
+@media screen and (max-width: 487px) {
+  .mylogo {
+    width: 135px; 
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 487px) and (max-width: 767px) {
+  .mylogo {
+    width: 170px; 
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .mylogo {
+    width: 200px; 
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px;
+  }
+}
+
+.forgot-password {
+  float:right; 
+  font-size: 80%; 
+  position: relative; 
+  top:-10px; 
+}
+
+body.login {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}

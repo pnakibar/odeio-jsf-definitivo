@@ -1,0 +1,16 @@
+.bgred {
+  background-color: red;
+}
+
+.recipe-stars {
+  color: gold;
+  border-bottom: 10px;
+}
+
+.star-hovered {
+  color: blue;
+}
+
+.star-clicked {
+  color: green;
+}

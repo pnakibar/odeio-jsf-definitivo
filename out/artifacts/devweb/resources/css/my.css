@@ -1,0 +1,56 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.message-list-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.like-button {
+  transition: color 300ms;
+}
+.liked {
+  color: #149c82;
+}
+
+.msg {
+    padding: 5px;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.message-container {
+  background-color: red;
+}
+
+.bg1 {
+  background-color: red;
+}
+
+.time {
+    color: #bfbfbf;
+}
+
+.fixed-action-btn {
+    position: fixed;
+    right: 23px;
+    bottom: 23px;
+    margin-bottom: 0;
+    z-index: 998;
+}
+.kc_fab_main_btn{
+  background-color:#F44336;
+  width:60px;
+  height:60px;
+  border-radius:100%;
+  background:#F44336;
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-size:36px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
