@@ -13,17 +13,17 @@ import java.sql.SQLException;
 /**
  * Created by pedro on 27/11/16.
  */
-@ManagedBean(name="login")
+@ManagedBean(name="user")
 @SessionScoped
-public class Login {
+public class UserBean {
     private String email;
     private String password;
     private UserManagement um = new UserManagement();
+    private Usuario usuario;
 
     public String login() {
         try {
-            Usuario u = um.login(this.email, this.password);
-            System.out.println(u.getName());
+            this.usuario = um.login(this.email, this.password);
             return "index";
         } catch (SQLException | ClassNotFoundException | InvalidUserException e) {
             e.printStackTrace();
@@ -46,5 +46,13 @@ public class Login {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }

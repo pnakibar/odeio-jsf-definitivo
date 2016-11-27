@@ -42,12 +42,12 @@
           <h:form id="loginform" class="form-horizontal">
             <div style="margin-bottom: 25px" class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-              <h:inputText id="login-username" type="text" class="form-control" name="username" value="#{login.email}" placeholder="Email" />
+              <h:inputText id="login-username" type="text" class="form-control" name="username" value="#{user.email}" placeholder="Email" />
             </div>
 
             <div style="margin-bottom: 25px" class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-              <h:inputSecret id="login-password" type="password" class="form-control" name="password" value="#{login.password}" placeholder="Senha" />
+              <h:inputSecret id="login-password" type="password" class="form-control" name="password" value="#{user.password}" placeholder="Senha" />
             </div>
 
             <div class="input-group">
@@ -63,7 +63,7 @@
               <!-- Button -->
 
               <div class="col-sm-12 controls">
-                <h:commandButton id="btn-login" class="btn btn-success" action="#{login.login}" value="Login"></h:commandButton>
+                <h:commandButton id="btn-login" class="btn btn-success" action="#{user.login}" value="Login"></h:commandButton>
                 <!-- <a id="btn-login" href="index.html" class="btn btn-success">Login</a> -->
               </div>
             </div>
