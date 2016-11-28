@@ -2,7 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+>
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -64,7 +66,7 @@
 
               <div class="col-sm-12 controls">
                 <h:commandButton id="btn-login" class="btn btn-success" action="#{user.login}" value="Login"></h:commandButton>
-                <!-- <a id="btn-login" href="index.html" class="btn btn-success">Login</a> -->
+                <!-- <a id="btn-login" href="index.xhtml" class="btn btn-success">Login</a> -->
               </div>
             </div>
 
@@ -94,7 +96,7 @@
           <div style="float:right; font-size: 85%; position: relative; top:-10px"><a style="color: white;" id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Faça o login</a></div>
         </div>
         <div class="panel-body">
-          <form id="signupform" class="form-horizontal" action="login.xhtml">
+          <h:form enctype="multipart/form-data" id="signupform" class="form-horizontal" action="login.xhtml">
 
             <div id="signupalert" style="display:none" class="alert alert-danger">
               <p>Error:</p>
@@ -104,49 +106,64 @@
             <div class="form-group">
               <label class="col-md-3 control-label">Email</label>
               <div class="col-md-9">
-                <input type="text" class="form-control" name="email" placeholder="Endereço de Email" />
+                <!-- <input type="text" class="form-control" name="email" placeholder="Endereço de Email" /> -->
+                <h:inputText id="signup-email" type="text" class="form-control" name="email" value="#{user.email}" placeholder="Endereço de email" />
               </div>
             </div>
 
             <div class="form-group">
               <label class="col-md-3 control-label">Nome completo</label>
               <div class="col-md-9">
-                <input type="text" class="form-control" name="firstname" placeholder="Nome completo" />
+                <!-- <input type="text" class="form-control" name="firstname" placeholder="Nome completo" /> -->
+                <h:inputText id="signup-fullname" type="text" class="form-control" name="fullname" value="#{user.fullname}" placeholder="Nome completo" />
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-3 control-label">Nome de usuario</label>
               <div class="col-md-9">
-                <input type="text" class="form-control" name="username" placeholder="nomedeusuario" />
+                <!-- <input type="text" class="form-control" name="username" placeholder="nomedeusuario" /> -->
+                <h:inputText id="signup-username" type="text" class="form-control" name="username" value="#{user.username}" placeholder="Nome de usuario" />
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-3 control-label">Senha</label>
               <div class="col-md-9">
-                <input type="password" class="form-control" name="passwd" placeholder="Senha" />
+                <!-- <input type="password" class="form-control" name="passwd" placeholder="Senha" /> -->
+                <h:inputText id="signup-password" type="text" class="form-control" name="password" value="#{user.password}" placeholder="Senha" />
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-3 control-label">Confirme a sua senha</label>
               <div class="col-md-9">
-                <input type="password" class="form-control" name="passwd" placeholder="Confirme a sua senha" />
+                <!-- <input type="password" class="form-control" name="passwd" placeholder="Confirme a sua senha" /> -->
+                <h:inputText id="signup-confirm-password" type="text" class="form-control" name="password-confirmation" value="#{user.confirmpassword}" placeholder="Confirme sua senha" />
               </div>
             </div>
 
             <div class="form-group">
               <label class="col-md-3 control-label">Data de Nascimento</label>
               <div class="col-md-9">
-                <input type="date" class="form-control" name="date-of-birth" />
+                <!--<input type="date" class="form-control" name="date-of-birth" />-->
+                <h:inputText id="signup-date-of-birth" type="text" class="form-control" name="date-of-birth" value="#{user.dateofbirth}" placeholder="Data de nascimento" />
               </div>
             </div>
 
             <div class="form-group">
-              <!-- Button -->
-              <div class="col-md-offset-3 col-md-9">
-                <button id="btn-signup" type="submit" class="btn btn-success"><i class="icon-hand-right"></i>Registrar</button>
+              <label class="col-md-3 control-label">Foto</label>
+              <div class="col-md-9">
+                <!--<input type="date" class="form-control" name="date-of-birth" />-->
+                <p:fileUpload value="#{user.avatar}" mode="simple"></p:fileUpload>
               </div>
             </div>
-          </form>
+
+            <!-- <div class="form-group"> -->
+              <!-- Button -->
+              <div class="col-md-offset-3 col-md-9">
+                <!-- <button id="btn-signup" type="submit" class="btn btn-success"><i class="icon-hand-right"></i>Registrar</button> -->
+                <h:commandButton id="btn-signup" class="btn btn-success" action="#{user.signup}" value="Registrar"></h:commandButton>
+              </div>
+            <!-- </div> -->
+          </h:form>
         </div>
       </div>
 

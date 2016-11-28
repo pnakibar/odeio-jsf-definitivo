@@ -1,11 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://getbootstrap.com/examples/theme/ -->
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
-   <f:view>
-      <h:outputLabel value="Hello, world"/>
-   </f:view>
+
+<head>
+  <ui:composition template="templates/commonHead.xhtml" />
+</head>
+
+<body>
+  <!-- Fixed navbar -->
+  <ui:composition template="templates/commonNavbar.xhtml"></ui:composition>
+
+
+  <main class="container" id="message-container">
+    <ui:repeat value="#{posts.listAll}" var="post">
+      <section>
+        <div class="media msg">
+          <a class="pull-left" href="#">
+            <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 32px; height: 32px;" src="https://beerbods.co.uk/media/1197/brewdog-logo.jpg" />
+          </a>
+          <div class="media-body">
+            <h5 class="media-heading">
+            @brewdogsp
+            <small class="time"><i class="fa fa-clock-o"></i><time> 23:10</time></small>
+          </h5>
+            <small class="col-lg-10">Punk IPA on tap hoje! 50% de desconto nas cervejas direto do barril!</small>
+            <div class="col-lg-12 like-button">
+              10 <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </ui:repeat>
+  </main>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="fixed-action-btn kc_fab_main_btn" data-toggle="modal" data-target="#myModal">+</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+          <h4 class="modal-title" id="myModalLabel">Nova Postagem</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <textarea placeholder="O que está acontecendo?" class="form-control" rows="5" id="new-comment"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary enviar-new-comment" data-dismiss="modal">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /container -->
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="resources/js/myindex.js" />
+  <script src="resources/js/jquery.min.js" />
+</body>
+
 </html>

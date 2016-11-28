@@ -4,16 +4,55 @@ package beerzeit.model;
  * Created by pedro on 27/11/16.
  */
 public class Usuario {
+    private String id;
     private String name;
     private String dateOfBirth;
     private String password;
     private String email;
+    private String username;
+    private String avatar;
 
-    public Usuario(String name, String dateOfBirth, String password, String email) {
+    public Usuario(String name, String dateOfBirth, String password, String email, String username, String avatar) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.password = password;
         this.email = email;
+        this.username = username;
+        this.avatar = avatar;
+    }
+
+    public Usuario(String id, String name, String dateOfBirth, String password, String email, String username, String avatar) {
+        this.id = id;
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.password = password;
+        this.email = email;
+        this.username = username;
+        this.avatar = avatar;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {

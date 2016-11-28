@@ -1,0 +1,17 @@
+package beerzeit.control;
+
+import beerzeit.dao.PostDAO;
+import beerzeit.model.Post;
+
+import java.sql.SQLException;
+import java.util.List;
+
+/**
+ * Created by pedro on 27/11/16.
+ */
+public class PostsControl {
+    PostDAO postDAO = new PostDAO();
+    public List<Post> listPage(int pageNumber) throws SQLException, ClassNotFoundException {
+        return postDAO.list(pageNumber);
+    }
+}
