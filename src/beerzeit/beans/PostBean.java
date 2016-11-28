@@ -33,10 +33,18 @@ public class PostBean {
             return new ArrayList<>();
         }
     }
-    public void sendLike(int usuarioid, int postid) throws SQLException, ClassNotFoundException {
-        System.out.println("usuarioid " + usuarioid);
-        System.out.println("postid " + postid);
-        postsControl.insertLike(usuarioid, postid);
+    public void sendLike(int usuarioid, int postid) throws ClassNotFoundException, SQLException {
+        try {
+            postsControl.insertLike(usuarioid, postid);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            System.out.println(e.getMessage().indexOf("ERROR: duplicate key value violates unique constraint \"likes_usuario_post_key\""));
+            if (e.getMessage().indexOf("ERROR: duplicate key value violates unique constraint \"likes_usuario_post_key\"") >= 0) {
+                e.printStackTrace();
+            } else {
+                throw e;
+            }
+        }
     }
     public Map<Integer, StreamedContent> getPictures() {
         return pictures;

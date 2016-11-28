@@ -17,5 +17,6 @@ CREATE TABLE posts (
 
 CREATE TABLE likes (
   usuario INTEGER REFERENCES usuario (id),
-  post INTEGER REFERENCES posts (id)
+  post INTEGER REFERENCES posts (id),
+  UNIQUE (usuario, post)
 );
