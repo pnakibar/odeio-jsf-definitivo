@@ -1,23 +1,3 @@
-const listenToLike = (el) => {
-  el.addEventListener('click', function () {
-    const likesHTML = newNumberOfLikes => `${newNumberOfLikes} <i class="fa fa-thumbs-up" aria-hidden="true"></i>`
-    if (!this.classList.contains('liked')) {
-      const newNumberOfLikes = new Number(el.textContent) + 1;
-      el.innerHTML = likesHTML(newNumberOfLikes);
-      this.classList.add('liked');
-    }
-    else {
-      const newNumberOfLikes = new Number(el.textContent) - 1;
-      el.innerHTML = likesHTML(newNumberOfLikes);
-      this.classList.remove('liked');
-    }
-  })
-}
-
-Array.from(
-  document.getElementsByClassName('like-button')
-).forEach(e => listenToLike(e));
-
 const messageContainer = document.getElementById('message-container');
 
 function appendHtml(el, str) {

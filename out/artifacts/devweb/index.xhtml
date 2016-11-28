@@ -33,7 +33,7 @@
             <small class="col-lg-10"><h:outputText value="#{post.message}" /></small>
             <h:form>
               <h:commandLink action="#{posts.sendLike(user.usuario.id, post.id)}">
-                <div class="col-lg-12 like-button">
+                <div class="#{posts.containsLikeUser(post, user.usuario.id)}">
                   #{post.likes.size()} <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                 </div>
               </h:commandLink>

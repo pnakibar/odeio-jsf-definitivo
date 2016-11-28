@@ -2,6 +2,7 @@ package beerzeit.beans;
 
 import beerzeit.control.PostsControl;
 import beerzeit.model.Post;
+import beerzeit.model.Usuario;
 import org.primefaces.model.StreamedContent;
 
 import javax.faces.bean.ManagedBean;
@@ -33,6 +34,17 @@ public class PostBean {
             return new ArrayList<>();
         }
     }
+
+    public String containsLikeUser(Post post, int id) {
+        System.out.println(id);
+        for (Usuario u: post.getLikes()) {
+            if (u.getId() == id) {
+                return "col-lg-12 like-button liked";
+            }
+        }
+        return "col-lg-12 like-button";
+    }
+
     public void sendLike(int usuarioid, int postid) throws ClassNotFoundException, SQLException {
         try {
             postsControl.insertLike(usuarioid, postid);

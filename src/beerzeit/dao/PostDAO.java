@@ -43,6 +43,7 @@ public class PostDAO extends DAO{
         while (rs.next()) {
             usersWhoLiked.add(
                 new Usuario(
+                        rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("dateofbirth"),
                         rs.getString("password"),

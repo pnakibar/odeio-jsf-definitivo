@@ -11,10 +11,13 @@ body {
 
 .like-button {
   transition: color 300ms;
+  color: #2c3e50;
 }
+
 .liked {
   color: #149c82;
 }
+
 
 .msg {
     padding: 5px;
