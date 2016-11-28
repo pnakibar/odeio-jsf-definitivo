@@ -1,5 +1,7 @@
 package beerzeit.model;
 
+import org.primefaces.model.StreamedContent;
+
 /**
  * Created by pedro on 27/11/16.
  */
@@ -11,6 +13,7 @@ public class Usuario {
     private String email;
     private String username;
     private String avatar;
+    private StreamedContent asd;
 
     public Usuario(String name, String dateOfBirth, String password, String email, String username, String avatar) {
         this.name = name;

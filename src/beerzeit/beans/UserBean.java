@@ -6,8 +6,10 @@ import beerzeit.utils.AvatarStorage;
 import beerzeit.utils.exception.InvalidUserException;
 import com.sun.xml.internal.messaging.saaj.packaging.mime.util.OutputUtil;
 import org.apache.commons.io.IOUtils;
+import org.primefaces.model.StreamedContent;
 import org.primefaces.model.UploadedFile;
 
+import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -36,6 +38,24 @@ public class UserBean {
     private String dateofbirth;
 
     private UploadedFile avatar;
+
+    private StreamedContent asd;
+
+    @PostConstruct
+    public void init() {
+        try {
+            this.asd = AvatarStorage.showFile("asd.png");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+    public StreamedContent getAsd() {
+        return asd;
+    }
+
+    public void setAsd(StreamedContent asd) {
+        this.asd = asd;
+    }
 
     public String login() {
         try {

@@ -1,6 +1,8 @@
 package beerzeit.utils;
 
 import org.apache.commons.io.IOUtils;
+import org.primefaces.model.DefaultStreamedContent;
+import org.primefaces.model.StreamedContent;
 import org.primefaces.model.UploadedFile;
 
 import java.io.*;
@@ -25,5 +27,11 @@ public class AvatarStorage {
         IOUtils.copy(avatarIS, avatarOS);
 
         return FILES_DIR + filename;
+    }
+
+    public static StreamedContent showFile(String filename) throws FileNotFoundException {
+        File f = new File(FILES_DIR, filename);
+        FileInputStream fis = new FileInputStream(f);
+        return new DefaultStreamedContent(fis);
     }
 }
