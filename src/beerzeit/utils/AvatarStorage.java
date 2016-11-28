@@ -26,7 +26,7 @@ public class AvatarStorage {
         OutputStream avatarOS = new FileOutputStream(f);
         IOUtils.copy(avatarIS, avatarOS);
 
-        return FILES_DIR + filename;
+        return finalFileName;
     }
 
     public static StreamedContent showFile(String filename) throws FileNotFoundException {

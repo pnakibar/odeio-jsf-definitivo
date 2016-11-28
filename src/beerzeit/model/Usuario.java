@@ -1,6 +1,9 @@
 package beerzeit.model;
 
+import beerzeit.utils.AvatarStorage;
 import org.primefaces.model.StreamedContent;
+
+import java.io.FileNotFoundException;
 
 /**
  * Created by pedro on 27/11/16.
@@ -13,7 +16,6 @@ public class Usuario {
     private String email;
     private String username;
     private String avatar;
-    private StreamedContent asd;
 
     public Usuario(String name, String dateOfBirth, String password, String email, String username, String avatar) {
         this.name = name;
@@ -88,5 +90,9 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public StreamedContent getImageAsStreamedContent() throws FileNotFoundException {
+        return AvatarStorage.showFile(this.avatar);
     }
 }
