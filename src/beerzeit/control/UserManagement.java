@@ -15,8 +15,6 @@ public class UserManagement {
     UsuarioDAO ud = new UsuarioDAO();
     public Usuario login(String email, String password) throws SQLException, ClassNotFoundException, InvalidUserException {
         Usuario u = ud.getUser(email);
-        System.out.println(u.getPassword());
-        System.out.println(password);
         if (u.getPassword().contentEquals(password)) {
             return u;
         }

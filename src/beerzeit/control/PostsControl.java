@@ -14,4 +14,7 @@ public class PostsControl {
     public List<Post> listPage(int pageNumber) throws SQLException, ClassNotFoundException {
         return postDAO.list(pageNumber);
     }
+    public void insertLike(int userid, int postid) throws SQLException, ClassNotFoundException {
+        postDAO.insertLike(userid, postid);
+    }
 }

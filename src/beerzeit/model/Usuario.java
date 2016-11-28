@@ -1,6 +1,7 @@
 package beerzeit.model;
 
 import beerzeit.utils.AvatarStorage;
+import com.sun.org.apache.xpath.internal.SourceTree;
 import org.primefaces.model.StreamedContent;
 
 import java.io.FileNotFoundException;
@@ -9,13 +10,14 @@ import java.io.FileNotFoundException;
  * Created by pedro on 27/11/16.
  */
 public class Usuario {
-    private String id;
+    private int id;
     private String name;
     private String dateOfBirth;
     private String password;
     private String email;
     private String username;
     private String avatar;
+    private StreamedContent avatarToShow;
 
     public Usuario(String name, String dateOfBirth, String password, String email, String username, String avatar) {
         this.name = name;
@@ -26,7 +28,7 @@ public class Usuario {
         this.avatar = avatar;
     }
 
-    public Usuario(String id, String name, String dateOfBirth, String password, String email, String username, String avatar) {
+    public Usuario(int id, String name, String dateOfBirth, String password, String email, String username, String avatar) {
         this.id = id;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
@@ -52,11 +54,11 @@ public class Usuario {
         this.avatar = avatar;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -92,7 +94,16 @@ public class Usuario {
         this.email = email;
     }
 
-    public StreamedContent getImageAsStreamedContent() throws FileNotFoundException {
-        return AvatarStorage.showFile(this.avatar);
+    public StreamedContent getAvatarToShow() {
+        try {
+            this.avatarToShow = AvatarStorage.showFile(this.avatar);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return avatarToShow;
+    }
+
+    public void setAvatarToShow(StreamedContent avatarToShow) {
+        this.avatarToShow = avatarToShow;
     }
 }

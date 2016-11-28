@@ -3,6 +3,7 @@ package beerzeit.beans;
 import beerzeit.control.UserManagement;
 import beerzeit.model.Usuario;
 import beerzeit.utils.AvatarStorage;
+import beerzeit.utils.SessionUtils;
 import beerzeit.utils.exception.InvalidUserException;
 import com.sun.xml.internal.messaging.saaj.packaging.mime.util.OutputUtil;
 import org.apache.commons.io.IOUtils;
@@ -14,6 +15,7 @@ import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 
 import java.io.*;
@@ -39,33 +41,23 @@ public class UserBean {
 
     private UploadedFile avatar;
 
-    private StreamedContent asd;
-
-    @PostConstruct
-    public void init() {
-        try {
-            this.asd = AvatarStorage.showFile("asd.png");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-    public StreamedContent getAsd() {
-        return asd;
-    }
-
-    public void setAsd(StreamedContent asd) {
-        this.asd = asd;
-    }
 
     public String login() {
         try {
             this.usuario = um.login(this.email, this.password);
+            HttpSession session = SessionUtils.getSession();
+            session.setAttribute("userid", usuario.getId());
             return "index";
         } catch (SQLException | ClassNotFoundException | InvalidUserException e) {
             e.printStackTrace();
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Email e/ou senha errado.", ""));
             return "login";
         }
+    }
+
+    public String logout() {
+        SessionUtils.getSession().invalidate();
+        return "login";
     }
 
     public String signup() {
@@ -88,6 +80,10 @@ public class UserBean {
             e.printStackTrace();
             return "login";
         }
+    }
+
+    public String dosomething() throws FileNotFoundException {
+        return "asd";
     }
 
     public String getEmail() {

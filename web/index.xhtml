@@ -3,7 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+>
 
 <head>
   <ui:composition template="templates/commonHead.xhtml" />
@@ -15,21 +17,27 @@
 
 
   <main class="container" id="message-container">
-    <ui:repeat value="#{posts.listAll}" var="post">
+    <ui:repeat value="#{posts.listAll()}" var="post">
       <section>
         <div class="media msg">
           <a class="pull-left" href="#">
-            <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 32px; height: 32px;" src="https://beerbods.co.uk/media/1197/brewdog-logo.jpg" />
+            <p:graphicImage value="#{imagerender.image}" width="64" height="64">
+              <f:param name="filename" value="#{post.usuario.avatar}"></f:param>
+            </p:graphicImage>
           </a>
           <div class="media-body">
             <h5 class="media-heading">
-            @brewdogsp
+            @<h:outputText value="#{post.usuario.username}" />
             <small class="time"><i class="fa fa-clock-o"></i><time> 23:10</time></small>
           </h5>
-            <small class="col-lg-10">Punk IPA on tap hoje! 50% de desconto nas cervejas direto do barril!</small>
-            <div class="col-lg-12 like-button">
-              10 <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-            </div>
+            <small class="col-lg-10"><h:outputText value="#{post.message}" /></small>
+            <h:form>
+              <h:commandLink action="#{posts.sendLike(user.usuario.id, post.id)}">
+                <div class="col-lg-12 like-button">
+                  #{post.likes.size()} <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </div>
+              </h:commandLink>
+            </h:form>
           </div>
         </div>
       </section>

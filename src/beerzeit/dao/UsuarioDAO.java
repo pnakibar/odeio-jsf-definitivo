@@ -27,13 +27,14 @@ public class UsuarioDAO extends DAO{
     public Usuario getUser(String email) throws SQLException, ClassNotFoundException {
         this.open();
         PreparedStatement stmt = this.conn.prepareStatement(
-                "SELECT email, password, name, dateofbirth, username, avatar FROM public.usuario WHERE email like ?"
+                "SELECT id, email, password, name, dateofbirth, username, avatar FROM public.usuario WHERE email like ?"
         );
         stmt.setString(1, email);
         ResultSet rs = stmt.executeQuery();
         rs.next();
         this.close();
         return new Usuario(
+                rs.getInt("id"),
                 rs.getString("name"),
                 rs.getString("dateofbirth"),
                 rs.getString("password"),
@@ -43,12 +44,12 @@ public class UsuarioDAO extends DAO{
         );
     }
 
-    public Usuario getUserById(String id) throws SQLException, ClassNotFoundException {
+    public Usuario getUserById(int id) throws SQLException, ClassNotFoundException {
         this.open();
         PreparedStatement stmt = this.conn.prepareStatement(
-                "SELECT email, password, name, dateofbirth, username, avatar FROM public.usuario WHERE id like ?"
+                "SELECT email, password, name, dateofbirth, username, avatar FROM public.usuario WHERE id = ?"
         );
-        stmt.setString(1, id);
+        stmt.setInt(1, id);
         ResultSet rs = stmt.executeQuery();
         rs.next();
         this.close();

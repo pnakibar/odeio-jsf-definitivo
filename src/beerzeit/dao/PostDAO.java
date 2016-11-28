@@ -16,16 +16,27 @@ import java.util.List;
  */
 public class PostDAO extends DAO{
     private UsuarioDAO usuarioDAO = new UsuarioDAO();
-    private List<Usuario> getLikes(String postId) throws SQLException, ClassNotFoundException {
+    public void insertLike(int userid, int postid) throws SQLException, ClassNotFoundException {
+        this.open();
+        PreparedStatement stmt = this.conn.prepareStatement(
+                "INSERT INTO public.likes(usuario, post) VALUES (?, ?);"
+        );
+        stmt.setInt(1, userid);
+        stmt.setInt(2, postid);
+        stmt.execute();
+        this.close();
+    }
+
+    private List<Usuario> getLikes(int postId) throws SQLException, ClassNotFoundException {
         this.open();
         PreparedStatement stmt = this.conn.prepareStatement(
                 "SELECT u.* " +
                 "FROM likes l " +
                 "INNER JOIN usuario u ON l.usuario = u.id " +
-                "WHERE l.post like ?;"
+                "WHERE l.post = ?;"
         );
 
-        stmt.setString(1, postId);
+        stmt.setInt(1, postId);
         ResultSet rs = stmt.executeQuery();
 
         List<Usuario> usersWhoLiked = new ArrayList<>();
@@ -49,18 +60,18 @@ public class PostDAO extends DAO{
         this.open();
         List<Post> posts = new ArrayList<>();
         PreparedStatement stmt = this.conn.prepareStatement(
-                "SELECT * FROM post LIMIT 15 OFFSET " + (page * 15) + ";"
+                "SELECT * FROM posts LIMIT 15 OFFSET " + (page * 15) + ";"
         );
         ResultSet rs = stmt.executeQuery();
         while (rs.next()) {
-            String postId = rs.getString("id");
+            int postId = rs.getInt("id");
             posts.add(
                     new Post(
                         postId,
-                        usuarioDAO.getUserById(rs.getString("usuario")),
+                        usuarioDAO.getUserById(rs.getInt("usuario")),
                         rs.getString("message"),
                         this.getLikes(postId),
-                        new Date(new Timestamp(rs.getLong("createdat")).getTime())
+                        new Date(new Timestamp(new Long(rs.getString("createdat"))).getTime())
                     )
             );
 

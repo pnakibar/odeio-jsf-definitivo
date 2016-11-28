@@ -12,7 +12,6 @@ CREATE TABLE posts (
 	id SERIAL PRIMARY KEY NOT NULL,
 	usuario INTEGER REFERENCES usuario (id),
 	message TEXT NOT NULL,
-	likes INTEGER DEFAULT 0,
 	createdat VARCHAR(255) NOT NULL -- unix timestamp
 );
 
