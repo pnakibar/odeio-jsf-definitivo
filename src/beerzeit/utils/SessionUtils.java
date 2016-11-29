@@ -25,10 +25,10 @@ public class SessionUtils {
         return session.getAttribute("username").toString();
     }
 
-    public static String getUserId() {
+    public static Integer getUserId() {
         HttpSession session = getSession();
         if (session != null)
-            return (String) session.getAttribute("userid");
+            return (Integer) session.getAttribute("userid");
         else
             return null;
     }

@@ -8,8 +8,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
+import java.sql.Date;
 
 /**
  * Created by pedro on 27/11/16.
@@ -79,5 +79,18 @@ public class PostDAO extends DAO{
         }
         this.close();
         return posts;
+    }
+    public void insertPost(int authorid, String message) throws SQLException, ClassNotFoundException {
+        this.open();
+        List<Post> posts = new ArrayList<>();
+        PreparedStatement stmt = this.conn.prepareStatement(
+                "INSERT INTO public.posts(usuario, message, createdat) VALUES (?, ?, ?);"
+        );
+        stmt.setInt(1, authorid);
+        stmt.setString(2, message);
+        stmt.setString(3, "" + System.currentTimeMillis());
+        stmt.execute();
+
+        this.close();
     }
 }

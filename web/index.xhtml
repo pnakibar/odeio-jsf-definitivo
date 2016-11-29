@@ -5,6 +5,7 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
 >
 
 <head>
@@ -49,25 +50,25 @@
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
-          <h4 class="modal-title" id="myModalLabel">Nova Postagem</h4>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <textarea placeholder="O que está acontecendo?" class="form-control" rows="5" id="new-comment"></textarea>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+            <h4 class="modal-title" id="myModalLabel">Nova Postagem</h4>
+          </div>
+          <h:form>
+            <div class="modal-body">
+                <div class="form-group">
+                  <h:inputTextarea value="#{newpost.message}" rows="5" a:placeholder="O que está acontecendo?" class="form-control"></h:inputTextarea>
+                </div>
             </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary enviar-new-comment" data-dismiss="modal">Enviar</button>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              <h:commandButton class="btn btn-primary" action="#{newpost.sendPost()}" value="Enviar"></h:commandButton>
+            </div>
+          </h:form>
         </div>
       </div>
-    </div>
   </div>
   <!-- /container -->
 
@@ -75,8 +76,8 @@
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="resources/js/myindex.js" />
   <script src="resources/js/jquery.min.js" />
+  <script src="resources/js/bootstrap.min.js" />
 </body>
 
 </html>

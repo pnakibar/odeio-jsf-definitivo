@@ -36,7 +36,6 @@ public class PostBean {
     }
 
     public String containsLikeUser(Post post, int id) {
-        System.out.println(id);
         for (Usuario u: post.getLikes()) {
             if (u.getId() == id) {
                 return "col-lg-12 like-button liked";

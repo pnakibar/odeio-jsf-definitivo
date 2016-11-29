@@ -19,9 +19,6 @@ public class RouterBean  {
         String r = getViewId().contentEquals(current) ?
                         "active" :
                         "";
-        System.out.println(current);
-        System.out.println(getViewId());
-        System.out.println(r);
         return r;
     }
 }

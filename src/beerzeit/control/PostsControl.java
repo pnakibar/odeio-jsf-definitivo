@@ -17,4 +17,8 @@ public class PostsControl {
     public void insertLike(int userid, int postid) throws SQLException, ClassNotFoundException {
         postDAO.insertLike(userid, postid);
     }
+
+    public void sendPost(int userid, String message) throws SQLException, ClassNotFoundException {
+        postDAO.insertPost(userid, message);
+    }
 }
