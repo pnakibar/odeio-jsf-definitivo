@@ -1,6 +1,7 @@
 package beerzeit.model;
 
-import java.util.Date;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
@@ -12,6 +13,7 @@ public class Post {
     private String message;
     private List<Usuario> likes;
     private Date createdat;
+    private SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm");
 
     public Post(Usuario usuario, String message, List<Usuario> likes, Date createdat) {
         this.usuario = usuario;
@@ -66,5 +68,9 @@ public class Post {
 
     public void setCreatedat(Date createdat) {
         this.createdat = createdat;
+    }
+
+    public String getHourcreatedat() {
+        return timeFormat.format(createdat);
     }
 }
