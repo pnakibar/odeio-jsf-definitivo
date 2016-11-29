@@ -17,5 +17,9 @@
             <from-outcome>login</from-outcome>
             <to-view-id>/login.xhtml</to-view-id>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>recipeslist</from-outcome>
+            <to-view-id>/recipeslist.xhtml</to-view-id>
+        </navigation-case>
     </navigation-rule>
 </faces-config>

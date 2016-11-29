@@ -20,3 +20,22 @@ CREATE TABLE likes (
   post INTEGER REFERENCES posts (id),
   UNIQUE (usuario, post)
 );
+
+CREATE TABLE beer_recipe (
+  id SERIAL PRIMARY KEY NOT NULL,
+  usuario INTEGER REFERENCES usuario (id),
+  name TEXT NOT NULL,
+  description TEXT NOT NULL,
+  style TEXT NOT NULL,
+  statistics TEXT NOT NULL,
+  ingredients TEXT NOT NULL,
+  production TEXT NOT NULL
+);
+
+CREATE TABLE beer_recipe_rating (
+  usuario INTEGER REFERENCES usuario (id),
+  beer_recipe INTEGER REFERENCES beer_recipe (id),
+  rating INTEGER NOT NULL CHECK (rating > 0 AND rating < 6),
+  UNIQUE (usuario, beer_recipe)
+);
+

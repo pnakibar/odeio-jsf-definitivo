@@ -1,69 +1,20 @@
 <!DOCTYPE html>
 <!-- saved from url=(0039)http://getbootstrap.com/examples/theme/ -->
-<html lang="pt">
-
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Beerzeit</title>
-  <!-- Latest compiled and minified CSS
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
--->
-  <!-- Optional theme
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
--->
-  <link rel="stylesheet" href="css/my.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/recipe.css">
-  <link rel="stylesheet" href="css/recipeslist.css">
-
-  <!-- Latest compiled and minified JavaScript -->
-
-  <style type="text/css">
-    * {
-      text-shadow: transparent 0px 0px 0px, rgba(0, 0, 0, 0.68) 0px 0px 0px !important;
-    }
-  </style>
+  <ui:composition template="templates/commonHead.xhtml" />
+  <link rel="stylesheet" href="resources/css/recipe.css" />
+  <link rel="stylesheet" href="resources/css/recipeslist.css" />
 </head>
 
 <body>
-  <!-- Fixed navbar -->
-  <header>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Beerzeit <small>@borgebeermaker</small></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Timeline</a></li>
-            <li class="active"><a href="recipeslist.html">Receitas</a></li>
-            <li><a href="mapa.html">Mapa</a></li>
-            <li><a href="me.html">Perfil</a></li>
-            <li><a href="config.html">Configurações</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="login.xhtml">Sair</a></li>
-          </ul>
-        </div>
-        <!--/.nav-collapse -->
-      </div>
-    </nav>
-  </header>
-
+  <ui:composition template="templates/commonNavbar.xhtml"></ui:composition>
   <main class="container" id="article">
     <div class="row">
       <section>
@@ -71,7 +22,7 @@
           <a href="recipe.html" class="list-group-item">
             <div class="media col-md-3">
               <figure class="pull-left">
-                <img class="media-object img-rounded img-responsive beer-image" src="img/atomic.jpg" alt="placehold.it/350x250">
+                <img class="media-object img-rounded img-responsive beer-image" src="img/atomic.jpg" alt="placehold.it/350x250" />
               </figure>
             </div>
             <div class="col-md-6">
@@ -97,7 +48,7 @@
           <a href="#" class="list-group-item">
             <div class="media col-md-3">
               <figure class="pull-left">
-                <img class="media-object img-rounded img-responsive beer-image" src="http://bigbeefandbeer.com/wp-content/uploads/2010/01/FoundersBreakfastStout.jpg" alt="placehold.it/350x250">
+                <img class="media-object img-rounded img-responsive beer-image" src="http://bigbeefandbeer.com/wp-content/uploads/2010/01/FoundersBreakfastStout.jpg" alt="placehold.it/350x250" />
               </figure>
             </div>
             <div class="col-md-6">
@@ -121,7 +72,7 @@
           <a href="#" class="list-group-item">
             <div class="media col-md-3">
               <figure class="pull-left">
-                <img class="media-object img-rounded img-responsive beer-image" src="http://www.bittohoneyipa.com/images/index_02.jpg" alt="placehold.it/350x250">
+                <img class="media-object img-rounded img-responsive beer-image" src="http://www.bittohoneyipa.com/images/index_02.jpg" alt="placehold.it/350x250" />
               </figure>
             </div>
             <div class="col-md-6">
@@ -156,7 +107,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
           <h4 class="modal-title" id="myModalLabel">Nova Postagem</h4>
         </div>
         <div class="modal-body">
@@ -179,12 +130,8 @@
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src=js/jquery.min.js></script>
-  <script src=js/myindex.js></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script>
-    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
-  </script>
+  <script src="resources/js/jquery.min.js" />
+  <script src="resources/js/bootstrap.min.js" />
 </body>
 
 </html>
