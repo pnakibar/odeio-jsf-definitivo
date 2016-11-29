@@ -61,7 +61,7 @@ public class PostDAO extends DAO{
         this.open();
         List<Post> posts = new ArrayList<>();
         PreparedStatement stmt = this.conn.prepareStatement(
-                "SELECT * FROM posts LIMIT 15 OFFSET " + (page * 15) + ";"
+                "SELECT * FROM posts ORDER BY id DESC LIMIT 15 OFFSET " + (page * 15) + ";"
         );
         ResultSet rs = stmt.executeQuery();
         while (rs.next()) {
@@ -82,7 +82,6 @@ public class PostDAO extends DAO{
     }
     public void insertPost(int authorid, String message) throws SQLException, ClassNotFoundException {
         this.open();
-        List<Post> posts = new ArrayList<>();
         PreparedStatement stmt = this.conn.prepareStatement(
                 "INSERT INTO public.posts(usuario, message, createdat) VALUES (?, ?, ?);"
         );

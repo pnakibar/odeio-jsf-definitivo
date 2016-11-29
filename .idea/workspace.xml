@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="416d3693-d86c-455c-971a-65385af24141" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beerzeit/beans/NewPostBean.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/devweb/resources/js/myindex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/resources/js/myindex.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/beans/NewPostBean.class" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/beans/NewPostBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/dao/PostDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/dao/PostDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/beans/NewPostBean.class" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/beans/NewPostBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/dao/PostDAO.class" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/dao/PostDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/index.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/devweb/index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/beans/PostBean.java" afterPath="$PROJECT_DIR$/src/beerzeit/beans/PostBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java" afterPath="$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/control/PostsControl.java" afterPath="$PROJECT_DIR$/src/beerzeit/control/PostsControl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/beans/NewPostBean.java" afterPath="$PROJECT_DIR$/src/beerzeit/beans/NewPostBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java" afterPath="$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/utils/SessionUtils.java" afterPath="$PROJECT_DIR$/src/beerzeit/utils/SessionUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.xhtml" afterPath="$PROJECT_DIR$/web/index.xhtml" />
     </list>
     <ignored path="DEV-WEB-INTELLIJ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,16 +63,17 @@
       <file leaf-file-name="PostDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="89" column="33" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="33" />
+            <state relative-caret-position="277">
+              <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1480376883932" expanded="true" signature="601:654" ph="INSERT INTO public.likes... " />
-                <marker date="1480376883932" expanded="true" signature="977:984" ph="SELECT usuar... " />
-                <marker date="1480376883932" expanded="true" signature="977:1121" ph="SELECT usuar... likes" />
-                <marker date="1480376883932" expanded="true" signature="2022:2057" ph="SELECT * FRO... post" />
-                <marker date="1480376883932" expanded="true" signature="2022:2058" ph="SELECT * FRO... post" />
-                <marker date="1480376883932" expanded="true" signature="2897:2967" ph="INSERT INTO public.posts... " />
+                <marker date="1480380321689" expanded="true" signature="601:654" ph="INSERT INTO public.likes... " />
+                <marker date="1480380321689" expanded="true" signature="977:984" ph="SELECT usuar... " />
+                <marker date="1480380321689" expanded="true" signature="977:1121" ph="SELECT usuar... likes" />
+                <marker date="1480380321689" expanded="true" signature="2022:2074" ph="SELECT * FRO... post" />
+                <marker date="1480380321689" expanded="true" signature="2022:2075" ph="SELECT * FRO... post" />
+                <marker date="1480380321689" expanded="true" signature="2022:2094" ph="SELECT * FRO... posts" />
+                <marker date="1480380321689" expanded="true" signature="2868:2938" ph="INSERT INTO public.posts... " />
               </folding>
             </state>
           </provider>
@@ -85,12 +82,13 @@
       <file leaf-file-name="NewPostBean.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/NewPostBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="421">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#660#661#0" expanded="true" />
                 <element signature="e#690#691#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,11 +164,11 @@
         <option value="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" />
         <option value="$PROJECT_DIR$/web/resources/js/myindex.js" />
         <option value="$PROJECT_DIR$/src/beerzeit/control/PostsControl.java" />
-        <option value="$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/PostBean.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/utils/SessionUtils.java" />
         <option value="$PROJECT_DIR$/web/index.xhtml" />
+        <option value="$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/NewPostBean.java" />
       </list>
     </option>
@@ -1121,16 +1119,16 @@
       <workItem from="1480273294969" duration="476000" />
       <workItem from="1480273796963" duration="14531000" />
       <workItem from="1480290516026" duration="17677000" />
-      <workItem from="1480370410799" duration="7745000" />
+      <workItem from="1480370410799" duration="8366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40429000" />
+    <option name="totallyTimeSpent" value="41050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="1" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1146,7 +1144,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18589744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18589744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1551,32 +1549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="89" column="33" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1480376883932" expanded="true" signature="601:654" ph="INSERT INTO public.likes... " />
-            <marker date="1480376883932" expanded="true" signature="977:984" ph="SELECT usuar... " />
-            <marker date="1480376883932" expanded="true" signature="977:1121" ph="SELECT usuar... likes" />
-            <marker date="1480376883932" expanded="true" signature="2022:2057" ph="SELECT * FRO... post" />
-            <marker date="1480376883932" expanded="true" signature="2022:2058" ph="SELECT * FRO... post" />
-            <marker date="1480376883932" expanded="true" signature="2897:2967" ph="INSERT INTO public.posts... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/beerzeit/utils/SessionUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -1601,14 +1573,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1480380321689" expanded="true" signature="601:654" ph="INSERT INTO public.likes... " />
+            <marker date="1480380321689" expanded="true" signature="977:984" ph="SELECT usuar... " />
+            <marker date="1480380321689" expanded="true" signature="977:1121" ph="SELECT usuar... likes" />
+            <marker date="1480380321689" expanded="true" signature="2022:2074" ph="SELECT * FRO... post" />
+            <marker date="1480380321689" expanded="true" signature="2022:2075" ph="SELECT * FRO... post" />
+            <marker date="1480380321689" expanded="true" signature="2022:2094" ph="SELECT * FRO... posts" />
+            <marker date="1480380321689" expanded="true" signature="2868:2938" ph="INSERT INTO public.posts... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/NewPostBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="421">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#660#661#0" expanded="true" />
             <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
           </folding>
         </state>
       </provider>

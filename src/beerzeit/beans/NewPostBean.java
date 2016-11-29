@@ -27,7 +27,6 @@ public class NewPostBean {
     }
 
     public void setMessage(String message) {
-        System.out.println(message);
         this.message = message;
     }
 }
