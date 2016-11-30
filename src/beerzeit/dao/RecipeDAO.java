@@ -30,7 +30,7 @@ public class RecipeDAO extends DAO{
     private List<RecipeRating> getRatings(int beerRecipeId) throws SQLException, ClassNotFoundException {
         this.open();
         PreparedStatement stmt = this.conn.prepareStatement(
-                "SELECT * as rating " +
+                "SELECT * " +
                 "FROM beer_recipe_rating brr " +
                 "WHERE brr.beer_recipe = ?;"
         );
@@ -69,7 +69,7 @@ public class RecipeDAO extends DAO{
                         rs.getString("style"),
                         rs.getString("statistics"),
                         rs.getString("ingredients"),
-                        rs.getString("ratings"),
+                        rs.getString("production"),
                         this.getRatings(postId),
                         rs.getString("picture")
                     )

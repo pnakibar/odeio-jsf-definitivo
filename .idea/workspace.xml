@@ -2,21 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="416d3693-d86c-455c-971a-65385af24141" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beerzeit/control/RecipeControl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beerzeit/dao/RecipeDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beerzeit/model/Recipe.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beerzeit/utils/exception/InvalidRatingException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beerzeit/utils/filters/BeerRecipeStorage.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/devweb/recipeslist.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/recipeslist.html" afterPath="$PROJECT_DIR$/web/recipeslist.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/beans/RecipesBean.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/control/RecipeControl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/dao/RecipeDAO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/model/Recipe.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/model/RecipeRating.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/utils/exception/InvalidRatingException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/utils/filters/BeerRecipeStorage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/beans/RecipesBean.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/control/RecipeControl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/dao/RecipeDAO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/model/Recipe.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/model/RecipeRating.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/utils/exception/InvalidRatingException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/utils/filters/BeerRecipeStorage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beerzeit/beans/RecipesBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/beans/ImageRenderBean.class" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/beans/ImageRenderBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/utils/AvatarStorage.class" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/utils/AvatarStorage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/beans/ImageRenderBean.class" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/beans/ImageRenderBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/utils/AvatarStorage.class" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/utils/AvatarStorage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/faces-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/recipe.html" afterPath="$PROJECT_DIR$/out/artifacts/devweb/recipe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/templates/commonNavbar.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/devweb/templates/commonNavbar.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/tables.sql" afterPath="$PROJECT_DIR$/sql/tables.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/recipe.html" afterPath="$PROJECT_DIR$/web/recipe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" afterPath="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/recipeslist.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/devweb/recipeslist.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/beans/ImageRenderBean.java" afterPath="$PROJECT_DIR$/src/beerzeit/beans/ImageRenderBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/dao/RecipeDAO.java" afterPath="$PROJECT_DIR$/src/beerzeit/dao/RecipeDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/model/Recipe.java" afterPath="$PROJECT_DIR$/src/beerzeit/model/Recipe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/utils/AvatarStorage.java" afterPath="$PROJECT_DIR$/src/beerzeit/utils/AvatarStorage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/recipeslist.xhtml" afterPath="$PROJECT_DIR$/web/recipeslist.xhtml" />
     </list>
     <ignored path="DEV-WEB-INTELLIJ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,11 +57,111 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RecipeControl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RecipeControl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beerzeit/control/RecipeControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recipeslist.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/recipeslist.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageRenderBean.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/ImageRenderBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecipeDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beerzeit/dao/RecipeDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+              <folding>
+                <marker date="1480513319885" expanded="true" signature="562:634" ph="INSERT INTO public.recipe_rating... " />
+                <marker date="1480513319885" expanded="true" signature="1002:1106" ph="SELECT u.*, beer_recipe_rating" />
+                <marker date="1480513319885" expanded="true" signature="1817:1876" ph="SELECT * FRO... beer_recipe" />
+                <marker date="1480513319885" expanded="true" signature="2871:3135" ph="INSERT INTO public.posts... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="12" selection-end-line="26" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recipe.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beerzeit/model/Recipe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1188">
+              <caret line="142" column="46" selection-start-line="142" selection-start-column="46" selection-end-line="142" selection-end-column="46" />
+              <folding>
+                <element signature="e#3054#3055#0" expanded="true" />
+                <element signature="e#3084#3085#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Usuario.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beerzeit/model/Usuario.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AvatarStorage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beerzeit/utils/AvatarStorage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/UserBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="65" column="77" selection-start-line="65" selection-start-column="77" selection-end-line="65" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecipesBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/RecipesBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,9 +203,7 @@
         <option value="$PROJECT_DIR$/web/config.html" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/ImageStreamer.java" />
         <option value="$PROJECT_DIR$/web/indexbackup.xhtml" />
-        <option value="$PROJECT_DIR$/src/beerzeit/beans/ImageRenderBean.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/control/UserManagement.java" />
-        <option value="$PROJECT_DIR$/src/beerzeit/utils/AvatarStorage.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/model/Usuario.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/dao/UsuarioDAO.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/utils/filters/LoggedInFilter.java" />
@@ -115,15 +224,18 @@
         <option value="$PROJECT_DIR$/web/recipeslist.html" />
         <option value="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
-        <option value="$PROJECT_DIR$/web/recipeslist.xhtml" />
         <option value="$PROJECT_DIR$/sql/tables.sql" />
         <option value="$PROJECT_DIR$/src/beerzeit/model/RecipeRaing.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/model/RecipeRating.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/utils/exception/InvalidRatingException.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/utils/filters/BeerRecipeStorage.java" />
-        <option value="$PROJECT_DIR$/src/beerzeit/model/Recipe.java" />
-        <option value="$PROJECT_DIR$/src/beerzeit/dao/RecipeDAO.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/control/RecipeControl.java" />
+        <option value="$PROJECT_DIR$/src/beerzeit/beans/RecipesBean.java" />
+        <option value="$PROJECT_DIR$/src/beerzeit/dao/RecipeDAO.java" />
+        <option value="$PROJECT_DIR$/src/beerzeit/utils/AvatarStorage.java" />
+        <option value="$PROJECT_DIR$/src/beerzeit/model/Recipe.java" />
+        <option value="$PROJECT_DIR$/web/recipeslist.xhtml" />
+        <option value="$PROJECT_DIR$/src/beerzeit/beans/ImageRenderBean.java" />
       </list>
     </option>
   </component>
@@ -171,7 +283,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -187,6 +298,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DEV-WEB-INTELLIJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV-WEB-INTELLIJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV-WEB-INTELLIJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV-WEB-INTELLIJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV-WEB-INTELLIJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV-WEB-INTELLIJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV-WEB-INTELLIJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -368,6 +533,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1019,15 +1185,16 @@
       <workItem from="1480273796963" duration="14531000" />
       <workItem from="1480290516026" duration="17677000" />
       <workItem from="1480370410799" duration="9588000" />
-      <workItem from="1480448070692" duration="5270000" />
+      <workItem from="1480448070692" duration="7134000" />
+      <workItem from="1480512473801" duration="3465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47542000" />
+    <option name="totallyTimeSpent" value="52871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1039,8 +1206,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2597826" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33152175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1081,14 +1248,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/login.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2754">
-          <caret line="153" column="20" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/me.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1566">
@@ -1110,7 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,9 +1276,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
           <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,7 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,13 +1394,6 @@
         <state relative-caret-position="234">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/ImageRenderBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1366,62 +1514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beerzeit/model/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#1189#1190#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-            <element signature="e#1268#1269#0" expanded="false" />
-            <element signature="e#1308#1309#0" expanded="false" />
-            <element signature="e#1341#1342#0" expanded="false" />
-            <element signature="e#1370#1371#0" expanded="false" />
-            <element signature="e#1414#1415#0" expanded="false" />
-            <element signature="e#1450#1451#0" expanded="false" />
-            <element signature="e#1476#1477#0" expanded="false" />
-            <element signature="e#1501#1502#0" expanded="false" />
-            <element signature="e#1534#1535#0" expanded="false" />
-            <element signature="e#1562#1563#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="false" />
-            <element signature="e#1620#1621#0" expanded="false" />
-            <element signature="e#1660#1661#0" expanded="false" />
-            <element signature="e#1692#1693#0" expanded="false" />
-            <element signature="e#1730#1731#0" expanded="false" />
-            <element signature="e#1764#1765#0" expanded="false" />
-            <element signature="e#1818#1819#0" expanded="false" />
-            <element signature="e#1864#1865#0" expanded="false" />
-            <element signature="e#1899#1900#0" expanded="false" />
-            <element signature="e#1930#1931#0" expanded="false" />
-            <element signature="e#1978#1979#0" expanded="false" />
-            <element signature="e#2018#2019#0" expanded="false" />
-            <element signature="e#2050#2051#0" expanded="false" />
-            <element signature="e#2078#2079#0" expanded="false" />
-            <element signature="e#2120#2121#0" expanded="false" />
-            <element signature="e#2154#2155#0" expanded="false" />
-            <element signature="e#2472#2473#0" expanded="false" />
-            <element signature="e#2520#2521#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beerzeit/model/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
-            <element signature="e#1659#1660#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/commonHead.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="50" selection-start-line="20" selection-start-column="4" selection-end-line="22" selection-end-column="112" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1429,15 +1525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="78" column="2" selection-start-line="78" selection-start-column="2" selection-end-line="79" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1448,7 +1535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1456,7 +1542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1465,14 +1550,14 @@
         <state relative-caret-position="54">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding>
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
+            <element signature="e#377#378#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
+            <element signature="e#443#444#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+            <element signature="e#507#508#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1481,10 +1566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding>
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1493,24 +1574,6 @@
         <state relative-caret-position="288">
           <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/recipeslist.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1265">
-          <caret line="109" column="112" selection-start-line="109" selection-start-column="112" selection-end-line="109" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/tables.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
-          <folding>
-            <marker date="1480450576668" expanded="true" signature="388:516" ph="CREATE TABLE... likes" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1535,34 +1598,85 @@
         <state relative-caret-position="126">
           <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
           <folding>
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="false" />
+            <element signature="e#226#227#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beerzeit/model/Recipe.java">
+    <entry file="file://$PROJECT_DIR$/sql/tables.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+        <state relative-caret-position="532">
+          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2857#2858#0" expanded="true" />
+            <marker date="1480450576668" expanded="true" signature="388:516" ph="CREATE TABLE... likes" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/beerzeit/dao/RecipeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="91" column="51" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+        <state relative-caret-position="99">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <marker date="1480513319885" expanded="true" signature="562:634" ph="INSERT INTO public.recipe_rating... " />
+            <marker date="1480513319885" expanded="true" signature="1002:1106" ph="SELECT u.*, beer_recipe_rating" />
+            <marker date="1480513319885" expanded="true" signature="1817:1876" ph="SELECT * FRO... beer_recipe" />
+            <marker date="1480513319885" expanded="true" signature="2871:3135" ph="INSERT INTO public.posts... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beerzeit/model/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="12" selection-end-line="26" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/RecipesBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1480454829987" expanded="true" signature="562:634" ph="INSERT INTO public.recipe_rating... " />
-            <marker date="1480454829987" expanded="true" signature="1002:1116" ph="SELECT u.*, beer_recipe_rating" />
-            <marker date="1480454829987" expanded="true" signature="1827:1886" ph="SELECT * FRO... beer_recipe" />
-            <marker date="1480454829987" expanded="true" signature="2878:3142" ph="INSERT INTO public.posts... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beerzeit/model/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beerzeit/model/Recipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="142" column="46" selection-start-line="142" selection-start-column="46" selection-end-line="142" selection-end-column="46" />
+          <folding>
+            <element signature="e#3054#3055#0" expanded="true" />
+            <element signature="e#3084#3085#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beerzeit/utils/AvatarStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1574,21 +1688,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beerzeit/utils/AvatarStorage.java">
+    <entry file="file://$PROJECT_DIR$/src/beerzeit/control/RecipeControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="288">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/recipeslist.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beerzeit/control/RecipeControl.java">
+    <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/ImageRenderBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

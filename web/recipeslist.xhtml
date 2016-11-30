@@ -18,83 +18,38 @@
   <main class="container" id="article">
     <div class="row">
       <section>
-        <div class="list-group">
-          <a href="recipe.html" class="list-group-item">
-            <div class="media col-md-3">
-              <figure class="pull-left">
-                <img class="media-object img-rounded img-responsive beer-image" src="img/atomic.jpg" alt="placehold.it/350x250" />
-              </figure>
-            </div>
-            <div class="col-md-6">
-              <h4 class="list-group-item-heading"> Atomic Pale Ale </h4>
-              <p class="list-group-item-text"> A fine upstanding young American known as Jeff Renner (nerenner@umich.edu) wrote at great length about his " ***Great Success in Recreating Classic American Pilsner , a Shamefully Neglected Style!***" . I too read Dr. Fix's article with
-                great interest and formulated a recipe for a "corn beer'. I loved it. My thirsty freeloading friends loved it. And I agree with Jeff that red blooded Americans should learn to love it again. This recipe is a direct adaptation from the
-                Brewing Techniques article by Dr. Fix.
-              </p>
-            </div>
-            <div class="col-md-3 text-center">
-              <h2> 14240 <small> Votos </small></h2>
-              <div class="btn btn-primary btn-lg btn-block">Vote agora!</div>
-              <div class="stars">
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
+        <ui:repeat value="#{recipes.list()}" var="recipe">
+          <div class="list-group">
+            <a href="recipe.html" class="list-group-item">
+              <div class="media col-md-3">
+                <figure class="pull-left">
+                  <p:graphicImage styleClass="media-object img-rounded img-responsive beer-image" value="#{imagerender.image}">
+                    <f:param name="filename" value="#{recipe.picture}"></f:param>
+                  </p:graphicImage>
+                  <!--<img class="media-object img-rounded img-responsive beer-image" src="img/atomic.jpg" alt="placehold.it/350x250" /> -->
+                </figure>
               </div>
-              <p> Média 4.5 <small> / </small> 5 </p>
+              <div class="col-md-6">
+                <h4 class="list-group-item-heading"> <h:outputText value="#{recipe.name}" /> </h4>
+                <p class="list-group-item-text"> <h:outputText value="#{recipe.description}" />
+                </p>
+              </div>
+              <div class="col-md-3 text-center">
+                <h2> <h:outputText value="#{recipe.ratings.size()}"/> <small> Votos </small></h2>
+                <div class="btn btn-primary btn-lg btn-block">Vote agora!</div>
+                <div class="stars">
+                  <span class="glyphicon #{recipe.getAverageRating() > 0 ? 'glyphicon-star' : 'glyphicon-star-empty'}"></span>
+                  <span class="glyphicon #{recipe.getAverageRating() > 1 ? 'glyphicon-star' : 'glyphicon-star-empty'}"></span>
+                  <span class="glyphicon #{recipe.getAverageRating() > 2 ? 'glyphicon-star' : 'glyphicon-star-empty'}"></span>
+                  <span class="glyphicon #{recipe.getAverageRating() > 3 ? 'glyphicon-star' : 'glyphicon-star-empty'}"></span>
+                  <span class="glyphicon #{recipe.getAverageRating() > 4 ? 'glyphicon-star' : 'glyphicon-star-empty'}"></span>
+                </div>
+                <p> Média #{recipe.getAverageRating()} <small> / </small> 5 </p>
             </div>
           </a>
-          <a href="#" class="list-group-item">
-            <div class="media col-md-3">
-              <figure class="pull-left">
-                <img class="media-object img-rounded img-responsive beer-image" src="http://bigbeefandbeer.com/wp-content/uploads/2010/01/FoundersBreakfastStout.jpg" alt="placehold.it/350x250" />
-              </figure>
-            </div>
-            <div class="col-md-6">
-              <h4 class="list-group-item-heading"> Double Chocolate Oatmeal Stout </h4>
-              <p class="list-group-item-text"> A heavy, very dark, very smooth, chocolaty stout. High ABV for an oatmeal stout, but it is so smooth and chocolate tasting it doesn't taste like a high alcohol beer. Makes a good breakfast beer.
-              </p>
-            </div>
-            <div class="col-md-3 text-center">
-              <h2> 12424 <small> votos </small></h2>
-              <div class="btn btn-primary btn-lg btn-block">Vote agora!</div>
-              <div class="stars">
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-              </div>
-              <p> Média 3.9 <small> / </small> 5 </p>
-            </div>
-          </a>
-          <a href="#" class="list-group-item">
-            <div class="media col-md-3">
-              <figure class="pull-left">
-                <img class="media-object img-rounded img-responsive beer-image" src="http://www.bittohoneyipa.com/images/index_02.jpg" alt="placehold.it/350x250" />
-              </figure>
-            </div>
-            <div class="col-md-6">
-              <h4 class="list-group-item-heading"> Spring Equinox Honey IPA </h4>
-              <p class="list-group-item-text"> If you love honey and Equinox characteristics, this is the beer for you. I planned it out such that it would be ready to drink on the Spring Equinox in 2016. It was EXCELLENT that day, I ended up having about 8 that day. Over time, the explosive
-                hops dies out a bit of course, but it by no means ages poorly.
-              </p>
-            </div>
-            <div class="col-md-3 text-center">
-              <h2> 13540 <small> votos </small></h2>
-              <div class="btn btn-primary btn-lg btn-block">Vote agora!</div>
-              <div class="stars">
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-              </div>
-              <p> Média 4.1 <small> / </small> 5 </p>
-            </div>
-          </a>
+
         </div>
+        </ui:repeat>
       </section>
     </div>
   </main>

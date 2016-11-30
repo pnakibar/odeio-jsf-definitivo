@@ -1,7 +1,10 @@
 package beerzeit.model;
 
+import beerzeit.utils.AvatarStorage;
 import org.primefaces.component.rating.Rating;
+import org.primefaces.model.StreamedContent;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 
 /**
@@ -19,6 +22,7 @@ public class Recipe {
     private String production;
     private String picture;
     private List<RecipeRating> ratings;
+    private StreamedContent pictureToShow;
 
     public Recipe(int id, Usuario usuario, String name, String description, String style, String statistics, String ingredients, String production, List<RecipeRating> ratings, String picture) {
         this.id = id;
@@ -30,6 +34,7 @@ public class Recipe {
         this.ingredients = ingredients;
         this.production = production;
         this.ratings = ratings;
+        this.picture = picture;
     }
 
     public Recipe(Usuario usuario, String name, String description, String style, String statistics, String ingredients, String production, List<RecipeRating> ratings, String picture) {
@@ -41,6 +46,7 @@ public class Recipe {
         this.ingredients = ingredients;
         this.production = production;
         this.ratings = ratings;
+        this.picture = picture;
     }
 
     public List<RecipeRating> getRatings() {
@@ -121,5 +127,25 @@ public class Recipe {
 
     public void setPicture(String picture) {
         this.picture = picture;
+    }
+
+    public float getAverageRating() {
+        if (this.getRatings().size() == 0) {
+            return 0;
+        }
+        float average = 0;
+        for (RecipeRating rp : this.getRatings()) {
+            average += rp.getNota();
+        }
+        return average / this.getRatings().size();
+    }
+
+    public StreamedContent getAvatarToShow() {
+        try {
+            this.pictureToShow = AvatarStorage.showFile(this.picture, AvatarStorage.FILES_DIR + "receita/");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return pictureToShow;
     }
 }

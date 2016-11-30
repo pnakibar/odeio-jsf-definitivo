@@ -11,7 +11,7 @@ import java.io.*;
  * Created by pedro on 27/11/16.
  */
 public class AvatarStorage {
-    private static final String FILES_DIR = "/home/pedro/DESENVOLVIMENTOWEB/uploads/";
+    public static final String FILES_DIR = "/home/pedro/DESENVOLVIMENTOWEB/uploads/";
 
     public static String save(UploadedFile avatar, String filename) throws IOException {
         InputStream avatarIS = avatar.getInputstream();
@@ -29,9 +29,13 @@ public class AvatarStorage {
         return finalFileName;
     }
 
-    public static StreamedContent showFile(String filename) throws FileNotFoundException {
-        File f = new File(FILES_DIR, filename);
+    public static StreamedContent showFile(String filename, String filedir) throws FileNotFoundException {
+        File f = new File(filedir, filename);
         FileInputStream fis = new FileInputStream(f);
         return new DefaultStreamedContent(fis);
+    }
+
+    public static StreamedContent showFile(String filename) throws FileNotFoundException {
+        return showFile(FILES_DIR, filename);
     }
 }
