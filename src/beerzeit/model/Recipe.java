@@ -142,7 +142,7 @@ public class Recipe {
 
     public StreamedContent getAvatarToShow() {
         try {
-            this.pictureToShow = AvatarStorage.showFile(this.picture, AvatarStorage.FILES_DIR + "receita/");
+            this.pictureToShow = AvatarStorage.showFile(this.picture);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

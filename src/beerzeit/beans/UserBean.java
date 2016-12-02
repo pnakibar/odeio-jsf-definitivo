@@ -73,17 +73,13 @@ public class UserBean {
                         avatarurl
                 );
                 um.create(u);
-                return "teste";
+                return "index";
             }
             return "login";
         } catch (IOException | ClassNotFoundException | SQLException e) {
             e.printStackTrace();
             return "login";
         }
-    }
-
-    public String dosomething() throws FileNotFoundException {
-        return "asd";
     }
 
     public String getEmail() {

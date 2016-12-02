@@ -29,7 +29,8 @@ CREATE TABLE beer_recipe (
   style TEXT NOT NULL,
   statistics TEXT NOT NULL,
   ingredients TEXT NOT NULL,
-  production TEXT NOT NULL
+  production TEXT NOT NULL,
+  UNIQUE(name)
 );
 
 CREATE TABLE beer_recipe_rating (

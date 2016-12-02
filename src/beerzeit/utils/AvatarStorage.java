@@ -21,7 +21,7 @@ public class AvatarStorage {
         String format = split[split.length - 1];
         String finalFileName = filename + "." + format;
 
-        File f = new File(FILES_DIR, filename);
+        File f = new File(FILES_DIR, finalFileName);
         f.createNewFile();
         OutputStream avatarOS = new FileOutputStream(f);
         IOUtils.copy(avatarIS, avatarOS);
@@ -29,13 +29,10 @@ public class AvatarStorage {
         return finalFileName;
     }
 
-    public static StreamedContent showFile(String filename, String filedir) throws FileNotFoundException {
-        File f = new File(filedir, filename);
-        FileInputStream fis = new FileInputStream(f);
-        return new DefaultStreamedContent(fis);
-    }
 
     public static StreamedContent showFile(String filename) throws FileNotFoundException {
-        return showFile(FILES_DIR, filename);
+        File f = new File(FILES_DIR, filename);
+        FileInputStream fis = new FileInputStream(f);
+        return new DefaultStreamedContent(fis);
     }
 }

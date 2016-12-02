@@ -32,7 +32,7 @@ public class RecipeControl {
     }
 
     public void insertRecipe(int userid, String name, String description, String style, String statstics, String ingredients, String production, UploadedFile picture) throws SQLException, ClassNotFoundException, IOException {
-        String picturename = AvatarStorage.save(picture, "picture/" + name);
+        String picturename = AvatarStorage.save(picture, "recipepicture" + name);
         recipeDAO.insertRecipe(
                 new Recipe(
                         usuarioDAO.getUserById(userid),
