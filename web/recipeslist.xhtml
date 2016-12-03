@@ -70,20 +70,16 @@
           <div id="modalBody" class="modal-body">
             <h:messages redisplay="false" />
             <h:message for="btn-newrecipe" />
+
             <div class="form-group">
-              <label class="col-md-3 control-label">Foto</label>
-                <p:fileUpload value="#{newrecipe.file}" mode="simple">
-                </p:fileUpload>
-            </div>
-            <div class="form-group">
-              <label class="control-label">Nome</label>
+              <label class="control-label">Nome<i class="required-mark">*</i></label>
               <h:inputText class="form-control" required="true" requiredMessage="Por favor digite um nome" value="#{newrecipe.name}" a:placeholder="nome da sua receita...">
                 <f:validateRequired></f:validateRequired>
                 <p:ajax event="blur" update="btn-newrecipe" />
               </h:inputText>
             </div>
             <div class="form-group">
-              <label class="control-label">Estilo</label>
+              <label class="control-label">Estilo<i class="required-mark">*</i></label>
               <h:inputText class="form-control"  required="true" requiredMessage="Por favor digite um estilo" value="#{newrecipe.style}" a:placeholder="estilo da sua receita, IPA, pilsen, weiss...">
                 <f:validateRequired></f:validateRequired>
                 <p:ajax event="blur" update="btn-newrecipe" />
@@ -91,32 +87,37 @@
 
             </div>
             <div class="form-group">
-              <label class="control-label">Descrição</label>
+              <label class="control-label">Descrição<i class="required-mark">*</i></label>
               <h:inputText class="form-control" required="true" requiredMessage="Por favor digite uma descrição" value="#{newrecipe.description}" a:placeholder="uma breve descrição da sua receita...">
                 <f:validateRequired></f:validateRequired>
                 <p:ajax event="blur" update="btn-newrecipe" />
               </h:inputText>
             </div>
             <div class="form-group">
-              <label class="control-label">Ingredientes</label>
+              <label class="control-label">Ingredientes<i class="required-mark">*</i></label>
               <h:inputTextarea class="form-control" required="true" requiredMessage="Por favor digite os ingredientes" value="#{newrecipe.ingredients}" a:placeholder="digite os ingredientes separados por enter...">
                 <f:validateRequired></f:validateRequired>
                 <p:ajax event="blur" update="btn-newrecipe" />
               </h:inputTextarea>
             </div>
             <div class="form-group">
-              <label class="control-label">Estatísticas</label>
+              <label class="control-label">Estatísticas<i class="required-mark">*</i></label>
               <h:inputTextarea class="form-control" required="true" requiredMessage="Por favor digite as estatísticas" value="#{newrecipe.statstics}" a:placeholder="digite as estatísticas da cerveja, como IBU, OG...">
                 <f:validateRequired></f:validateRequired>
                 <p:ajax event="blur" update="btn-newrecipe" />
               </h:inputTextarea>
             </div>
             <div class="form-group">
-              <label class="control-label">Produção</label>
+              <label class="control-label">Produção<i class="required-mark">*</i></label>
               <h:inputTextarea class="form-control" required="true" requiredMessage="Por favor digite o processo de produção" value="#{newrecipe.production}" a:placeholder="digite os passos para produzir a cerveja...">
                 <f:validateRequired></f:validateRequired>
                 <p:ajax event="blur" update="btn-newrecipe" />
               </h:inputTextarea>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label">Foto</label>
+              <p:fileUpload value="#{newrecipe.file}" mode="simple">
+              </p:fileUpload>
             </div>
 
           </div>
