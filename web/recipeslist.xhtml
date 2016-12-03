@@ -21,7 +21,7 @@
       <section>
         <ui:repeat value="#{recipes.list()}" var="recipe">
           <div class="list-group">
-            <a href="recipe.html" class="list-group-item">
+            <h:outputLink value="#{recipes.selectRecipe(recipe)}" class="list-group-item">
               <div class="media col-md-3">
                 <figure class="pull-left">
                   <p:graphicImage styleClass="media-object img-rounded img-responsive beer-image" value="#{imagerender.image}">
@@ -39,15 +39,15 @@
                 <h2> <h:outputText value="#{recipe.ratings.size()}"/> <small> Votos </small></h2>
                 <div class="btn btn-primary btn-lg btn-block">Vote agora!</div>
                 <div class="stars">
-                  <span class="glyphicon #{recipe.getAverageRating() > 0 ? 'glyphicon-star' : 'glyphicon-star-empty'}"></span>
-                  <span class="glyphicon #{recipe.getAverageRating() > 1 ? 'glyphicon-star' : 'glyphicon-star-empty'}"></span>
-                  <span class="glyphicon #{recipe.getAverageRating() > 2 ? 'glyphicon-star' : 'glyphicon-star-empty'}"></span>
-                  <span class="glyphicon #{recipe.getAverageRating() > 3 ? 'glyphicon-star' : 'glyphicon-star-empty'}"></span>
-                  <span class="glyphicon #{recipe.getAverageRating() > 4 ? 'glyphicon-star' : 'glyphicon-star-empty'}"></span>
+                  <span class="glyphicon #{recipe.getAverageRating() > 0 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+                  <span class="glyphicon #{recipe.getAverageRating() > 1 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+                  <span class="glyphicon #{recipe.getAverageRating() > 2 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+                  <span class="glyphicon #{recipe.getAverageRating() > 3 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+                  <span class="glyphicon #{recipe.getAverageRating() > 4 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
                 </div>
                 <p> Média #{recipe.getAverageRating()} <small> / </small> 5 </p>
             </div>
-          </a>
+          </h:outputLink>
 
         </div>
         </ui:repeat>

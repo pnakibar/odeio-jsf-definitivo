@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://getbootstrap.com/examples/theme/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+>
+
+
+<head>
+  <ui:composition template="templates/commonHead.xhtml" />
+  <link rel="stylesheet" href="resources/css/recipe.css" />
+</head>
+
+<body>
+  <ui:composition template="templates/commonNavbar.xhtml" />
+
+  <main class="container" id="article">
+    <article>
+      <h1><h:outputText value="#{recipes.selectedRecipe.name}" /></h1>
+      <h2><h:outputText value="@#{recipes.selectedRecipe.usuario.username}" /></h2>
+      <span class="recipe-stars">
+        <c:if test="#{recipes.selectedRecipe.userIdVoted(user.usuario.id)}">
+          <span class="glyphicon #{recipes.selectedRecipe.getUserRating(user.usuario.id) > 0 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+          <span class="glyphicon #{recipes.selectedRecipe.getUserRating(user.usuario.id) > 1 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+          <span class="glyphicon #{recipes.selectedRecipe.getUserRating(user.usuario.id) > 2 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+          <span class="glyphicon #{recipes.selectedRecipe.getUserRating(user.usuario.id) > 3 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+          <span class="glyphicon #{recipes.selectedRecipe.getUserRating(user.usuario.id) > 4 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+        </c:if>
+        <c:if test="#{!recipes.selectedRecipe.userIdVoted(user.usuario.id)}">
+          <h:form>
+            <h:commandLink action="#{recipes.voteRecipe(recipes.selectedRecipe, user.usuario.id, 1)}">
+              <i id="star-1" class="fa fa-star-o star" />
+            </h:commandLink>
+            <h:commandLink action="#{recipes.voteRecipe(recipes.selectedRecipe, user.usuario.id, 2)}">
+              <i id="star-2" class="fa fa-star-o star" />
+            </h:commandLink>
+            <h:commandLink action="#{recipes.voteRecipe(recipes.selectedRecipe, user.usuario.id, 3)}">
+              <i id="star-3" class="fa fa-star-o star" />
+            </h:commandLink>
+            <h:commandLink action="#{recipes.voteRecipe(recipes.selectedRecipe, user.usuario.id, 4)}">
+              <i id="star-4" class="fa fa-star-o star" />
+            </h:commandLink>
+            <h:commandLink action="#{recipes.voteRecipe(recipes.selectedRecipe, user.usuario.id, 5)}">
+              <i id="star-5" class="fa fa-star-o star" />
+            </h:commandLink>
+          </h:form>
+        </c:if>
+      </span>
+      <p:graphicImage styleClass="img-responsive image-recipe" value="#{imagerender.image}">
+        <f:param name="filename" value="#{recipes.selectedRecipe.picture}" />
+      </p:graphicImage>
+      <section>
+        <h3>Descrição:</h3>
+        <p>
+          <h:outputText value="#{recipes.selectedRecipe.description}" />
+        </p>
+        <h4>Estilo:</h4>
+        <p>
+          <h:outputText value="#{recipes.selectedRecipe.style}" />
+        </p>
+        <h4>Estatísticas:</h4>
+        <ul>
+          <ui:repeat value="#{recipes.selectedRecipe.getStatisticsFormatted()}" var="line">
+            <li><h:outputText value="#{line}" /></li>
+          </ui:repeat>
+        </ul>
+        <h3>Receita:</h3>
+        <h4>Ingredientes:</h4>
+        <ul>
+          <ui:repeat value="#{recipes.selectedRecipe.getIngredientsFormatted()}" var="line">
+            <li><h:outputText value="#{line}" /></li>
+          </ui:repeat>
+        </ul>
+        <h4>Produção:</h4>
+        <p>
+          <h:outputText value="#{recipes.selectedRecipe.production}" />
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="fixed-action-btn kc_fab_main_btn" data-toggle="modal" data-target="#myModal">+</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+          <h4 class="modal-title" id="myModalLabel">Nova Postagem</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <textarea placeholder="O que está acontecendo?" class="form-control" rows="5" id="new-comment"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary enviar-new-comment" data-dismiss="modal">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /container -->
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="resources/js/jquery.min.js" />
+  <script src="resources/js/myindex.js" />
+  <script src="resources/js/recipe.js"/>
+  <script src="resources/js/bootstrap.min.js" />
+</body>
+
+</html>

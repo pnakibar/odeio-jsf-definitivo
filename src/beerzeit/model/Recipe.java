@@ -1,7 +1,6 @@
 package beerzeit.model;
 
 import beerzeit.utils.AvatarStorage;
-import org.primefaces.component.rating.Rating;
 import org.primefaces.model.StreamedContent;
 
 import java.io.FileNotFoundException;
@@ -100,6 +99,9 @@ public class Recipe {
     public String getStatistics() {
         return statistics;
     }
+    public String[] getStatisticsFormatted() {
+        return statistics.split("\n");
+    }
 
     public void setStatistics(String statistics) {
         this.statistics = statistics;
@@ -109,6 +111,9 @@ public class Recipe {
         return ingredients;
     }
 
+    public String[] getIngredientsFormatted() {
+        return ingredients.split("\n");
+    }
     public void setIngredients(String ingredients) {
         this.ingredients = ingredients;
     }
@@ -147,5 +152,23 @@ public class Recipe {
             e.printStackTrace();
         }
         return pictureToShow;
+    }
+
+    public boolean userIdVoted(int userid) {
+        for (RecipeRating r: this.getRatings()) {
+            if (r.getUsuario().getId() == userid) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int getUserRating(int userid) throws Exception {
+        for (RecipeRating r: this.getRatings()) {
+            if (r.getUsuario().getId() == userid) {
+                return r.getNota();
+            }
+        }
+        throw new Exception("Usuario não votou.");
     }
 }

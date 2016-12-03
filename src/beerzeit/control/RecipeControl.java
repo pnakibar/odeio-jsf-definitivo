@@ -23,12 +23,17 @@ public class RecipeControl {
     public void insertRating(int userId, int beerRecipeId, int rating) throws SQLException, ClassNotFoundException, InvalidRatingException {
         if (rating > 0 && rating < 6) {
             recipeDAO.insertRating(userId, beerRecipeId, rating);
+        } else {
+            throw new InvalidRatingException();
         }
-        throw new InvalidRatingException();
     }
 
     public List<Recipe> list(int page) throws SQLException, ClassNotFoundException {
         return recipeDAO.list(page);
+    }
+
+    public Recipe getRecipe(int recipeid) throws SQLException, ClassNotFoundException {
+        return recipeDAO.getRecipe(recipeid);
     }
 
     public void insertRecipe(int userid, String name, String description, String style, String statstics, String ingredients, String production, UploadedFile picture) throws SQLException, ClassNotFoundException, IOException {

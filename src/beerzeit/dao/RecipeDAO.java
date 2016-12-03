@@ -15,16 +15,42 @@ import java.util.List;
 public class RecipeDAO extends DAO{
     private UsuarioDAO usuarioDAO = new UsuarioDAO();
 
-    public void insertRating(int userid, int postid, int rating) throws SQLException, ClassNotFoundException {
+    public void insertRating(int userid, int recipeId, int rating) throws SQLException, ClassNotFoundException {
         this.open();
         PreparedStatement stmt = this.conn.prepareStatement(
-                "INSERT INTO public.recipe_rating(usuario, post, rating) VALUES (?, ?, ?);"
+                "INSERT INTO beer_recipe_rating(usuario, beer_recipe, rating) VALUES (?, ?, ?);"
         );
         stmt.setInt(1, userid);
-        stmt.setInt(2, postid);
+        stmt.setInt(2, recipeId);
         stmt.setInt(3, rating);
         stmt.execute();
         this.close();
+    }
+
+    public Recipe getRecipe(int recipeid) throws SQLException, ClassNotFoundException {
+        this.open();
+        PreparedStatement stmt = this.conn.prepareStatement(
+                "SELECT * FROM beer_recipe WHERE id = ?;"
+        );
+        stmt.setInt(1, recipeid);
+        ResultSet rs = stmt.executeQuery();
+        rs.next();
+        int postId = rs.getInt("id");
+        Recipe recipe = new Recipe(
+                postId,
+                usuarioDAO.getUserById(rs.getInt("usuario")),
+                rs.getString("name"),
+                rs.getString("description"),
+                rs.getString("style"),
+                rs.getString("statistics"),
+                rs.getString("ingredients"),
+                rs.getString("production"),
+                this.getRatings(postId),
+                rs.getString("picture")
+        );
+
+        this.close();
+        return recipe;
     }
 
     private List<RecipeRating> getRatings(int beerRecipeId) throws SQLException, ClassNotFoundException {

@@ -14,3 +14,8 @@
 .star-clicked {
   color: green;
 }
+
+.image-recipe {
+  max-height: 300px;
+  max-width: 300px;
+}
