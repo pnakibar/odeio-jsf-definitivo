@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="416d3693-d86c-455c-971a-65385af24141" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/recipe.html" afterPath="$PROJECT_DIR$/web/recipe.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/beans/RecipesBean.java" afterPath="$PROJECT_DIR$/src/beerzeit/beans/RecipesBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/control/RecipeControl.java" afterPath="$PROJECT_DIR$/src/beerzeit/control/RecipeControl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/dao/RecipeDAO.java" afterPath="$PROJECT_DIR$/src/beerzeit/dao/RecipeDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/model/Recipe.java" afterPath="$PROJECT_DIR$/src/beerzeit/model/Recipe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/recipeslist.xhtml" afterPath="$PROJECT_DIR$/web/recipeslist.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/css/recipe.css" afterPath="$PROJECT_DIR$/web/resources/css/recipe.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/templates/commonNavbar.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/devweb/templates/commonNavbar.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" afterPath="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" />
     </list>
     <ignored path="DEV-WEB-INTELLIJ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,11 +87,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recipe.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="recipe.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/recipe.xhtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
               <caret line="46" column="98" selection-start-line="46" selection-start-column="98" selection-end-line="46" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commonHead.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/templates/commonHead.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commonNavbar.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/templates/commonNavbar.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RouterBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -143,7 +167,6 @@
         <option value="$PROJECT_DIR$/src/beerzeit/utils/filters/LoginFilter.java" />
         <option value="$PROJECT_DIR$/web/resources/js/myindex.js" />
         <option value="$PROJECT_DIR$/src/beerzeit/control/PostsControl.java" />
-        <option value="$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/utils/SessionUtils.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/NewPostBean.java" />
@@ -151,7 +174,6 @@
         <option value="$PROJECT_DIR$/src/beerzeit/model/Post.java" />
         <option value="$PROJECT_DIR$/web/recipe.html" />
         <option value="$PROJECT_DIR$/web/recipeslist.html" />
-        <option value="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" />
         <option value="$PROJECT_DIR$/src/beerzeit/model/RecipeRaing.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/model/RecipeRating.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/utils/exception/InvalidRatingException.java" />
@@ -173,6 +195,8 @@
         <option value="$PROJECT_DIR$/src/beerzeit/dao/RecipeDAO.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/control/RecipeControl.java" />
         <option value="$PROJECT_DIR$/web/recipe.xhtml" />
+        <option value="$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java" />
+        <option value="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" />
       </list>
     </option>
   </component>
@@ -268,6 +292,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV-WEB-INTELLIJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEV-WEB-INTELLIJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1104,12 +1146,12 @@
       <workItem from="1480512473801" duration="6006000" />
       <workItem from="1480565514123" duration="21000" />
       <workItem from="1480625555131" duration="15339000" />
-      <workItem from="1480793109392" duration="9411000" />
+      <workItem from="1480793109392" duration="12180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80183000" />
+    <option name="totallyTimeSpent" value="82952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -1124,7 +1166,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30652174" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20978262" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1294,23 +1336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/commonNavbar.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/beerzeit/model/RecipeRating.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1474,14 +1499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/commonHead.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/beerzeit/dao/UsuarioDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -1618,6 +1635,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="46" column="98" selection-start-line="46" selection-start-column="98" selection-end-line="46" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/commonHead.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/commonNavbar.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
           <folding />
         </state>
       </provider>
