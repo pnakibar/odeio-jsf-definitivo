@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="416d3693-d86c-455c-971a-65385af24141" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/beans/PostBean.class" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/beans/PostBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/control/PostsControl.class" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/control/PostsControl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/dao/PostDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/devweb/WEB-INF/classes/beerzeit/dao/PostDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/beans/PostBean.class" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/beans/PostBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/control/PostsControl.class" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/control/PostsControl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/dao/PostDAO.class" afterPath="$PROJECT_DIR$/out/production/DEV-WEB-INTELLIJ/beerzeit/dao/PostDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/me.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/devweb/me.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/beans/PostBean.java" afterPath="$PROJECT_DIR$/src/beerzeit/beans/PostBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/control/PostsControl.java" afterPath="$PROJECT_DIR$/src/beerzeit/control/PostsControl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java" afterPath="$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/me.xhtml" afterPath="$PROJECT_DIR$/web/me.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" afterPath="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" />
     </list>
     <ignored path="DEV-WEB-INTELLIJ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,8 +65,8 @@
       <file leaf-file-name="commonNavbar.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/templates/commonNavbar.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+            <state relative-caret-position="324">
+              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -186,7 +175,6 @@
         <option value="$PROJECT_DIR$/web/recipe.xhtml" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
-        <option value="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" />
         <option value="$PROJECT_DIR$/sql/tables.sql" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/NewPostBean.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/model/Post.java" />
@@ -195,6 +183,7 @@
         <option value="$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/PostBean.java" />
         <option value="$PROJECT_DIR$/web/me.xhtml" />
+        <option value="$PROJECT_DIR$/web/templates/commonNavbar.xhtml" />
       </list>
     </option>
   </component>
@@ -1144,12 +1133,12 @@
       <workItem from="1480512473801" duration="6006000" />
       <workItem from="1480565514123" duration="21000" />
       <workItem from="1480625555131" duration="15339000" />
-      <workItem from="1480793109392" duration="16757000" />
+      <workItem from="1480793109392" duration="17193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87529000" />
+    <option name="totallyTimeSpent" value="87965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -1666,8 +1655,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/commonNavbar.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        <state relative-caret-position="324">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
           <folding />
         </state>
       </provider>
