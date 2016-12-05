@@ -110,20 +110,20 @@
               <label class="col-md-3 control-label">Senha<i class="required-mark">*</i></label>
               <div class="col-md-9">
                 <!-- <input type="password" class="form-control" name="passwd" placeholder="Senha" /> -->
-                <h:inputText id="signup-password" type="password" class="form-control" name="password" value="#{user.password}" a:placeholder="Senha">
+                <h:inputSecret id="signup-password" type="password" class="form-control" name="password" value="#{user.password}" a:placeholder="Senha">
                   <f:validateRequired></f:validateRequired>
                   <p:ajax event="blur" update="btn-signup" />
-                </h:inputText>
+                </h:inputSecret>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-3 control-label">Confirme a sua senha<i class="required-mark">*</i></label>
               <div class="col-md-9">
                 <!-- <input type="password" class="form-control" name="passwd" placeholder="Confirme a sua senha" /> -->
-                <h:inputText id="signup-confirm-password" type="password" class="form-control" name="password-confirmation" value="#{user.confirmpassword}" a:placeholder="Confirme sua senha">
+                <h:inputSecret id="signup-confirm-password" type="password" class="form-control" name="password-confirmation" value="#{user.confirmpassword}" a:placeholder="Confirme sua senha">
                   <f:validateRequired></f:validateRequired>
                   <p:ajax event="blur" update="btn-signup" />
-                </h:inputText>
+                </h:inputSecret>
               </div>
             </div>
 
