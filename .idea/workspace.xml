@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="416d3693-d86c-455c-971a-65385af24141" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/beerzeit/beans/UserUpdateBean.java" afterPath="$PROJECT_DIR$/src/beerzeit/beans/UserUpdateBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/devweb/recipe.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/devweb/recipe.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.xhtml" afterPath="$PROJECT_DIR$/web/config.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/me.xhtml" afterPath="$PROJECT_DIR$/web/me.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/recipe.xhtml" afterPath="$PROJECT_DIR$/web/recipe.xhtml" />
     </list>
     <ignored path="DEV-WEB-INTELLIJ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +49,8 @@
       <file leaf-file-name="recipeslist.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/recipeslist.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+            <state relative-caret-position="1908">
+              <caret line="106" column="24" selection-start-line="61" selection-start-column="2" selection-end-line="130" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -56,18 +59,28 @@
       <file leaf-file-name="recipe.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/recipe.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-702">
-              <caret line="46" column="98" selection-start-line="46" selection-start-column="98" selection-end-line="46" selection-end-column="98" />
+            <state relative-caret-position="270">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commonHead.xhtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/templates/commonHead.xhtml">
+      <file leaf-file-name="me.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/me.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state relative-caret-position="198">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/config.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -94,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/beerzeit/control/Login.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/Login.java" />
         <option value="$PROJECT_DIR$/web/commonFotter.xhtml" />
         <option value="$PROJECT_DIR$/web/commonHeader.xhtml" />
@@ -120,7 +132,6 @@
         <option value="$PROJECT_DIR$/src/beerzeit/beans/RecipesBean.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/dao/RecipeDAO.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/control/RecipeControl.java" />
-        <option value="$PROJECT_DIR$/web/recipe.xhtml" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/RouterBean.java" />
         <option value="$PROJECT_DIR$/sql/tables.sql" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/NewPostBean.java" />
@@ -129,7 +140,6 @@
         <option value="$PROJECT_DIR$/src/beerzeit/control/PostsControl.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/dao/PostDAO.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/PostBean.java" />
-        <option value="$PROJECT_DIR$/web/me.xhtml" />
         <option value="$PROJECT_DIR$/web/mapa.xhtml" />
         <option value="$PROJECT_DIR$/web/resources/js/map.js" />
         <option value="$PROJECT_DIR$/src/beerzeit/dao/UsuarioDAO.java" />
@@ -138,13 +148,16 @@
         <option value="$PROJECT_DIR$/src/beerzeit/utils/AvatarStorage.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/control/UserManagement.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/utils/CookieHelper.java" />
-        <option value="$PROJECT_DIR$/web/recipeslist.xhtml" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/NewRecipeBean.java" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/UserBean.java" />
         <option value="$PROJECT_DIR$/web/resources/css/my.css" />
         <option value="$PROJECT_DIR$/web/login.xhtml" />
-        <option value="$PROJECT_DIR$/web/config.xhtml" />
         <option value="$PROJECT_DIR$/src/beerzeit/beans/UserUpdateBean.java" />
+        <option value="$PROJECT_DIR$/web/templates/newRecipeModal.xhtml" />
+        <option value="$PROJECT_DIR$/web/recipeslist.xhtml" />
+        <option value="$PROJECT_DIR$/web/recipe.xhtml" />
+        <option value="$PROJECT_DIR$/web/me.xhtml" />
+        <option value="$PROJECT_DIR$/web/config.xhtml" />
       </list>
     </option>
   </component>
@@ -394,8 +407,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.5.jar!/" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/templates" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/src/beerzeit/dao" />
+      <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/web/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -403,10 +419,8 @@
       <recent name="beerzeit.utils.exception" />
       <recent name="beerzeit.dao" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/src/beerzeit/dao" />
-      <recent name="$PROJECT_DIR$/web" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/templates" />
       <recent name="$PROJECT_DIR$/web/resources" />
     </key>
   </component>
@@ -1037,12 +1051,12 @@
       <workItem from="1480793109392" duration="19001000" />
       <workItem from="1480907494615" duration="265000" />
       <workItem from="1480907782179" duration="10423000" />
-      <workItem from="1480940528260" duration="914000" />
+      <workItem from="1480940528260" duration="1281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101375000" />
+    <option name="totallyTimeSpent" value="101742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -1101,7 +1115,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/ImageStreamer.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1318,14 +1331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/me.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="22" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -1372,14 +1377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="31" column="161" selection-start-line="31" selection-start-column="161" selection-end-line="31" selection-end-column="161" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/commonNavbar.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -1445,14 +1442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/config.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/beerzeit/beans/UserBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1477,26 +1466,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/commonHead.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/commonNavbar.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/newRecipeModal.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/recipeslist.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+        <state relative-caret-position="1908">
+          <caret line="106" column="24" selection-start-line="61" selection-start-column="2" selection-end-line="130" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/recipe.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="46" column="98" selection-start-line="46" selection-start-column="98" selection-end-line="46" selection-end-column="98" />
+        <state relative-caret-position="270">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/commonHead.xhtml">
+    <entry file="file://$PROJECT_DIR$/web/me.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+        <state relative-caret-position="198">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/config.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
       </provider>

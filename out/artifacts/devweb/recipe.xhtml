@@ -10,10 +10,10 @@
 >
 
 
-<head>
+<h:head>
   <ui:composition template="templates/commonHead.xhtml" />
   <link rel="stylesheet" href="resources/css/recipe.css" />
-</head>
+</h:head>
 
 <body>
   <ui:composition template="templates/commonNavbar.xhtml" />
@@ -92,19 +92,68 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
-          <h4 class="modal-title" id="myModalLabel">Nova Postagem</h4>
+          <h4 class="modal-title" id="myModalLabel">Nova Receita</h4>
         </div>
-        <div class="modal-body">
-          <form>
+        <h:form enctype="multipart/form-data">
+          <div id="modalBody" class="modal-body">
+            <h:messages redisplay="false" />
+            <h:message for="btn-newrecipe" />
+
             <div class="form-group">
-              <textarea placeholder="O que está acontecendo?" class="form-control" rows="5" id="new-comment"></textarea>
+              <label class="control-label">Nome<i class="required-mark">*</i></label>
+              <h:inputText class="form-control" required="true" requiredMessage="Por favor digite um nome" value="#{newrecipe.name}" a:placeholder="nome da sua receita...">
+                <f:validateRequired></f:validateRequired>
+                <p:ajax event="blur" update="btn-newrecipe" />
+              </h:inputText>
             </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary enviar-new-comment" data-dismiss="modal">Enviar</button>
-        </div>
+            <div class="form-group">
+              <label class="control-label">Estilo<i class="required-mark">*</i></label>
+              <h:inputText class="form-control"  required="true" requiredMessage="Por favor digite um estilo" value="#{newrecipe.style}" a:placeholder="estilo da sua receita, IPA, pilsen, weiss...">
+                <f:validateRequired></f:validateRequired>
+                <p:ajax event="blur" update="btn-newrecipe" />
+              </h:inputText>
+
+            </div>
+            <div class="form-group">
+              <label class="control-label">Descrição<i class="required-mark">*</i></label>
+              <h:inputText class="form-control" required="true" requiredMessage="Por favor digite uma descrição" value="#{newrecipe.description}" a:placeholder="uma breve descrição da sua receita...">
+                <f:validateRequired></f:validateRequired>
+                <p:ajax event="blur" update="btn-newrecipe" />
+              </h:inputText>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Ingredientes<i class="required-mark">*</i></label>
+              <h:inputTextarea class="form-control" required="true" requiredMessage="Por favor digite os ingredientes" value="#{newrecipe.ingredients}" a:placeholder="digite os ingredientes separados por enter...">
+                <f:validateRequired></f:validateRequired>
+                <p:ajax event="blur" update="btn-newrecipe" />
+              </h:inputTextarea>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Estatísticas<i class="required-mark">*</i></label>
+              <h:inputTextarea class="form-control" required="true" requiredMessage="Por favor digite as estatísticas" value="#{newrecipe.statstics}" a:placeholder="digite as estatísticas da cerveja, como IBU, OG...">
+                <f:validateRequired></f:validateRequired>
+                <p:ajax event="blur" update="btn-newrecipe" />
+              </h:inputTextarea>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Produção<i class="required-mark">*</i></label>
+              <h:inputTextarea class="form-control" required="true" requiredMessage="Por favor digite o processo de produção" value="#{newrecipe.production}" a:placeholder="digite os passos para produzir a cerveja...">
+                <f:validateRequired></f:validateRequired>
+                <p:ajax event="blur" update="btn-newrecipe" />
+              </h:inputTextarea>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label">Foto</label>
+              <p:fileUpload value="#{newrecipe.file}" mode="simple">
+              </p:fileUpload>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <h:commandButton id="btn-newrecipe" class="btn btn-primary" disabled="#{newrecipe.disabled}" action="#{newrecipe.createRecipe()}" value="Enviar"></h:commandButton>
+          </div>
+        </h:form>
       </div>
     </div>
   </div>
