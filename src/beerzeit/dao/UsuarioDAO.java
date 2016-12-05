@@ -64,4 +64,26 @@ public class UsuarioDAO extends DAO{
                 rs.getString("avatar")
         );
     }
+
+    public void update(Usuario u) throws Exception {
+        if (u.getId() == 0) {
+            throw new Exception("Não é possível atualizar esse usuário, não tem id.");
+        }
+        this.open();
+        PreparedStatement stmt = this.conn.prepareStatement(
+                "UPDATE public.usuario\n" +
+                        "   SET name=?, email=?, password=?, dateofbirth=?, avatar=?, username=?\n" +
+                        " WHERE id = ?;\n"
+        );
+
+        stmt.setString(1, u.getName());
+        stmt.setString(2, u.getEmail());
+        stmt.setString(3, u.getPassword());
+        stmt.setString(4, u.getDateOfBirth());
+        stmt.setString(5, u.getAvatar());
+        stmt.setString(6, u.getUsername());
+        stmt.setInt(7, u.getId());
+        stmt.execute();
+        this.close();
+    }
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://getbootstrap.com/examples/theme/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+>
+
+<head>
+  <ui:composition template="templates/commonHead.xhtml" />
+</head>
+
+<body>
+  <ui:composition template="templates/commonNavbar.xhtml" />
+  <div class="container role-main">
+    <div class="row">
+      <h:form enctype="multipart/form-data" id="signupform" class="form-horizontal" action="login.xhtml">
+        <fieldset>
+
+          <!-- Form Name -->
+          <legend>Atualizar dados</legend>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label">Nome</label>
+            <div class="col-md-5">
+              <h:inputText id="update-name" type="text" class="form-control input-md" name="name" value="#{userupdate.newName}" />
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label">Email</label>
+            <div class="col-md-5">
+              <h:inputText id="update-email" type="text" class="form-control input-md" name="email" value="#{userupdate.newEmail}" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label">Nome de usuario</label>
+            <div class="col-md-5">
+              <h:inputText id="update-username" type="text" class="form-control input-md" name="email" value="#{userupdate.newUsername}" />
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" >Senha</label>
+            <div class="col-md-5">
+              <h:inputText id="update-password" type="password" class="form-control input-md" name="email" value="#{userupdate.newPassword}" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">Nova foto</label>
+            <div class="col-md-4">
+              <!--<input class="btn btn-primary" type="file" name="pic" accept="image/*">
+              <input class="btn btn-primary" type="button" id="loadFileXml" value="Escolher arquivo..." onclick="document.getElementById('file').click();" />
+              <input type="file" style="display:none;" id="file" name="file" />
+               -->
+              <p:fileUpload value="#{userupdate.newAvatar}" mode="simple"></p:fileUpload>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label">Submit</label>
+            <div class="col-md-4">
+              <h:commandButton id="btn-signup" class="btn btn-primary" action="#{userupdate.updateUser}" value="Enviar"></h:commandButton>
+            </div>
+          </div>
+
+        </fieldset>
+      </h:form>
+
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="resources/js/jquery.min.js"/>
+  <script src="resources/js/bootstrap.min.js"/>
+
+</body>
+
+</html>

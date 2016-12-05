@@ -22,6 +22,11 @@ public class AvatarStorage {
         String finalFileName = filename + "." + format;
 
         File f = new File(FILES_DIR, finalFileName);
+        if (f.delete()) {
+            System.out.println("deleted!");
+        } else {
+            System.out.println("didn't delete");
+        }
         f.createNewFile();
         OutputStream avatarOS = new FileOutputStream(f);
         IOUtils.copy(avatarIS, avatarOS);
