@@ -5,6 +5,7 @@ import beerzeit.utils.SessionUtils;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import java.io.Serializable;
 import java.sql.SQLException;
 
 /**
@@ -12,7 +13,9 @@ import java.sql.SQLException;
  */
 @ManagedBean(name = "newpost")
 @SessionScoped
-public class NewPostBean {
+public class NewPostBean implements Serializable {
+    private static final long serialVersionUID = 2038757480193462799L;
+
     private String message;
     private PostsControl postsControl = new PostsControl();
     private String lat;

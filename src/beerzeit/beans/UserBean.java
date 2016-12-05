@@ -28,7 +28,8 @@ import java.util.Scanner;
  */
 @ManagedBean(name="user")
 @SessionScoped
-public class UserBean {
+public class UserBean implements Serializable{
+    private static final long serialVersionUID = 3313435270476716638L;
     private UserManagement um = new UserManagement();
     private Usuario usuario;
 

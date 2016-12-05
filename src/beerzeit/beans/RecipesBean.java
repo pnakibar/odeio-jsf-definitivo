@@ -6,6 +6,7 @@ import beerzeit.utils.exception.InvalidRatingException;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import java.io.Serializable;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -14,7 +15,8 @@ import java.util.List;
  */
 @ManagedBean(name = "recipes")
 @SessionScoped
-public class RecipesBean {
+public class RecipesBean implements Serializable{
+    private static final long serialVersionUID = 6365342326524677975L;
     private RecipeControl recipeControl = new RecipeControl();
     private Recipe selectedRecipe;
 

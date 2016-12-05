@@ -1,5 +1,6 @@
 package beerzeit.model;
 
+import java.io.Serializable;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -7,7 +8,8 @@ import java.util.List;
 /**
  * Created by pedro on 27/11/16.
  */
-public class Post {
+public class Post implements Serializable {
+    private static final long serialVersionUID = -7577589900713818238L;
     private int id;
     private Usuario usuario;
     private String message;

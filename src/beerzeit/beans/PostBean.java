@@ -7,6 +7,7 @@ import org.primefaces.model.StreamedContent;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
+import java.io.Serializable;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,7 +19,8 @@ import java.util.Map;
  */
 @ManagedBean(name="posts")
 @ViewScoped
-public class PostBean {
+public class PostBean implements Serializable {
+    private static final long serialVersionUID = -6784935997232594489L;
     private PostsControl postsControl = new PostsControl();
     private Map<Integer, StreamedContent> pictures = new HashMap<>();
 

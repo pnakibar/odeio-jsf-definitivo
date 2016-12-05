@@ -10,13 +10,15 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
+import java.io.Serializable;
 
 /**
  * Created by pedro on 05/12/16.
  */
 @SessionScoped
 @ManagedBean(name="userupdate")
-public class UserUpdateBean {
+public class UserUpdateBean implements Serializable{
+    private static final long serialVersionUID = 2457136122684217087L;
     @ManagedProperty(value="#{user}")
     private UserBean userBean;
     private UserManagement userManagement = new UserManagement();

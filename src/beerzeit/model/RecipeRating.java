@@ -1,9 +1,12 @@
 package beerzeit.model;
 
+import java.io.Serializable;
+
 /**
  * Created by pedro on 29/11/16.
  */
-public class RecipeRating {
+public class RecipeRating implements Serializable{
+    private static final long serialVersionUID = 8940655301905748006L;
     protected Usuario usuario;
     protected int nota;
 

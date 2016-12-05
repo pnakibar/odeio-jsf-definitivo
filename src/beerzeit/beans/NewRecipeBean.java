@@ -13,6 +13,7 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import java.io.IOException;
+import java.io.Serializable;
 import java.sql.SQLException;
 
 /**
@@ -20,7 +21,8 @@ import java.sql.SQLException;
  */
 @ManagedBean(name = "newrecipe")
 @SessionScoped
-public class NewRecipeBean {
+public class NewRecipeBean implements Serializable {
+    private static final long serialVersionUID = 5083269476499174260L;
     RecipeControl recipeControl = new RecipeControl();
     private String name;
     private String description;

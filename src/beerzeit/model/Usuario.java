@@ -5,11 +5,13 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 import org.primefaces.model.StreamedContent;
 
 import java.io.FileNotFoundException;
+import java.io.Serializable;
 
 /**
  * Created by pedro on 27/11/16.
  */
-public class Usuario {
+public class Usuario implements Serializable{
+    private static final long serialVersionUID = 6302793716186024028L;
     private int id;
     private String name;
     private String dateOfBirth;
