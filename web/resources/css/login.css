@@ -65,3 +65,32 @@ body.login {
   padding-top: 40px;
   padding-bottom: 30px;
 }
+
+.mylogin-panel-body-padding {
+  padding-top: 30px;
+}
+
+.mylogin-input-group {
+  margin-bottom: 25px;
+}
+
+.mylogin-form-group {
+  margin-top: 10px;
+}
+
+.mylogin-no-account {
+  border-top: 1px solid#888;
+  padding-top:15px;
+  font-size:85%;
+}
+
+.mylogin-already-has-account {
+  float:right;
+  font-size: 85%;
+  position: relative;
+  top:-10px;
+}
+
+#signinlink {
+  color: white;
+}
