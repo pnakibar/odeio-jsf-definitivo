@@ -29,10 +29,11 @@ import java.util.Scanner;
 @ManagedBean(name="user")
 @SessionScoped
 public class UserBean {
-    private String email;
-    private String password;
     private UserManagement um = new UserManagement();
     private Usuario usuario;
+
+    private String email;
+    private String password;
 
     private String fullname;
     private String username;
@@ -74,7 +75,7 @@ public class UserBean {
                         avatarurl
                 );
                 um.create(u);
-                return "index";
+                return this.login();
             }
             return "login";
         } catch (IOException | ClassNotFoundException | SQLException e) {
@@ -145,5 +146,28 @@ public class UserBean {
 
     public void setAvatar(UploadedFile avatar) {
         this.avatar = avatar;
+    }
+
+    public boolean isDisabled() {
+        if (email == null) {
+            return true;
+        }
+        if (this.password == null) {
+            return true;
+        }
+        if (this.fullname == null) {
+            return true;
+        }
+        if (this.username == null) {
+            return true;
+        }
+        if (this.confirmpassword == null) {
+            return true;
+        }
+        if (this.dateofbirth == null) {
+            return true;
+        }
+
+        return false;
     }
 }

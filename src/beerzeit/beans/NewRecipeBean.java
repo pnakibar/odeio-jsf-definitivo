@@ -116,7 +116,7 @@ public class NewRecipeBean {
     public void setProduction(String production) {
         this.production = production;
     }
-    private int asd = 1;
+
     public boolean isDisabled() {
         if (this.name == null){
             System.out.println("name");

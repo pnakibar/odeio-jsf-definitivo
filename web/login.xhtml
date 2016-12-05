@@ -7,22 +7,8 @@
 >
 
 <h:head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-  <title>Beerzeit</title>
-  <link rel="stylesheet" href="resources/css/my.css" />
-  <link rel="stylesheet" href="resources/css/bootstrap.min.css" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+  <ui:composition template="templates/commonHead.xhtml" />
   <link rel="stylesheet" href="resources/css/login.css" />
-  <style type="text/css">
-    * {
-      text-shadow: transparent 0px 0px 0px, rgba(0, 0, 0, 0.68) 0px 0px 0px !important;
-    }
-  </style>
 </h:head>
 
 <body class="login">
@@ -34,7 +20,6 @@
       <div class="panel panel-info myborder">
         <div class="myheading  myborder panel-heading">
           <div class="panel-title">Login</div>
-          <div class="forgot-password"><a style="color: white;" href="#">Esqueceu a senha?</a></div>
         </div>
 
         <div style="padding-top:30px" class="panel-body">
@@ -89,17 +74,14 @@
         </div>
         <div class="panel-body">
           <h:form enctype="multipart/form-data" id="signupform" class="form-horizontal" action="login.xhtml">
-
-            <div id="signupalert" style="display:none" class="alert alert-danger">
-              <p>Error:</p>
-              <span></span>
-            </div>
-
             <div class="form-group">
               <label class="col-md-3 control-label">Email<i class="required-mark">*</i></label>
               <div class="col-md-9">
                 <!-- <input type="text" class="form-control" name="email" placeholder="Endereço de Email" /> -->
-                <h:inputText id="signup-email" type="text" class="form-control" name="email" value="#{user.email}" placeholder="Endereço de email" />
+                <h:inputText id="signup-email" type="text" class="form-control" name="email" value="#{user.email}" placeholder="Endereço de email">
+                  <f:validateRequired/>
+                  <p:ajax event="blur" update="btn-signup" />
+                </h:inputText>
               </div>
             </div>
 
@@ -107,28 +89,40 @@
               <label class="col-md-3 control-label">Nome completo<i class="required-mark">*</i></label>
               <div class="col-md-9">
                 <!-- <input type="text" class="form-control" name="firstname" placeholder="Nome completo" /> -->
-                <h:inputText id="signup-fullname" type="text" class="form-control" name="fullname" value="#{user.fullname}" placeholder="Nome completo" />
+                <h:inputText id="signup-fullname" type="text" class="form-control" name="fullname" value="#{user.fullname}" placeholder="Nome completo">
+                  <f:validateRequired/>
+                  <p:ajax event="blur" update="btn-signup" />
+                </h:inputText>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-3 control-label">Nome de usuario<i class="required-mark">*</i></label>
               <div class="col-md-9">
                 <!-- <input type="text" class="form-control" name="username" placeholder="nomedeusuario" /> -->
-                <h:inputText id="signup-username" type="text" class="form-control" name="username" value="#{user.username}" placeholder="Nome de usuario" />
+                <h:inputText id="signup-username" type="text" class="form-control" name="username" value="#{user.username}" placeholder="Nome de usuario">
+                  <f:validateRequired></f:validateRequired>
+                  <p:ajax event="blur" update="btn-signup" />
+                </h:inputText>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-3 control-label">Senha<i class="required-mark">*</i></label>
               <div class="col-md-9">
                 <!-- <input type="password" class="form-control" name="passwd" placeholder="Senha" /> -->
-                <h:inputText id="signup-password" type="text" class="form-control" name="password" value="#{user.password}" placeholder="Senha" />
+                <h:inputText id="signup-password" type="text" class="form-control" name="password" value="#{user.password}" placeholder="Senha">
+                  <f:validateRequired></f:validateRequired>
+                  <p:ajax event="blur" update="btn-signup" />
+                </h:inputText>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-3 control-label">Confirme a sua senha<i class="required-mark">*</i></label>
               <div class="col-md-9">
                 <!-- <input type="password" class="form-control" name="passwd" placeholder="Confirme a sua senha" /> -->
-                <h:inputText id="signup-confirm-password" type="text" class="form-control" name="password-confirmation" value="#{user.confirmpassword}" placeholder="Confirme sua senha" />
+                <h:inputText id="signup-confirm-password" type="text" class="form-control" name="password-confirmation" value="#{user.confirmpassword}" placeholder="Confirme sua senha">
+                  <f:validateRequired></f:validateRequired>
+                  <p:ajax event="blur" update="btn-signup" />
+                </h:inputText>
               </div>
             </div>
 
@@ -136,7 +130,10 @@
               <label class="col-md-3 control-label">Data de Nascimento<i class="required-mark">*</i></label>
               <div class="col-md-9">
                 <!--<input type="date" class="form-control" name="date-of-birth" />-->
-                <h:inputText id="signup-date-of-birth" type="text" class="form-control" name="date-of-birth" value="#{user.dateofbirth}" placeholder="Data de nascimento" />
+                <h:inputText id="signup-date-of-birth" type="text" class="form-control" name="date-of-birth" value="#{user.dateofbirth}" placeholder="Data de nascimento">
+                  <f:validateRequired></f:validateRequired>
+                  <p:ajax event="blur" update="btn-signup" />
+                </h:inputText>
               </div>
             </div>
 
@@ -152,7 +149,7 @@
               <!-- Button -->
               <div class="col-md-offset-3 col-md-9">
                 <!-- <button id="btn-signup" type="submit" class="btn btn-success"><i class="icon-hand-right"></i>Registrar</button> -->
-                <h:commandButton id="btn-signup" class="btn btn-success" action="#{user.signup}" value="Registrar"></h:commandButton>
+                <h:commandButton id="btn-signup" class="btn btn-success" disabled="#{user.isDisabled()}" action="#{user.signup}" value="Registrar" />
               </div>
             <!-- </div> -->
           </h:form>
