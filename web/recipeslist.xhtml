@@ -21,33 +21,33 @@
       <section>
         <ui:repeat value="#{recipes.list()}" var="recipe">
           <div class="list-group">
-            <h:outputLink value="#{recipes.selectRecipe(recipe)}" class="list-group-item">
-              <div class="media col-md-3">
-                <figure class="pull-left">
-                  <p:graphicImage styleClass="media-object img-rounded img-responsive beer-image" value="#{imagerender.image}">
-                    <f:param name="filename" value="#{recipe.picture}"></f:param>
-                  </p:graphicImage>
-                  <!--<img class="media-object img-rounded img-responsive beer-image" src="img/atomic.jpg" alt="placehold.it/350x250" /> -->
-                </figure>
-              </div>
-              <div class="col-md-6">
-                <h4 class="list-group-item-heading"> <h:outputText value="#{recipe.name}" /> </h4>
-                <p class="list-group-item-text"> <h:outputText value="#{recipe.description}" />
-                </p>
-              </div>
-              <div class="col-md-3 text-center">
-                <h2> <h:outputText value="#{recipe.ratings.size()}"/> <small> Votos </small></h2>
-                <div class="btn btn-primary btn-lg btn-block">Vote agora!</div>
-                <div class="stars">
-                  <span class="glyphicon #{recipe.getAverageRating() > 0 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
-                  <span class="glyphicon #{recipe.getAverageRating() > 1 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
-                  <span class="glyphicon #{recipe.getAverageRating() > 2 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
-                  <span class="glyphicon #{recipe.getAverageRating() > 3 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
-                  <span class="glyphicon #{recipe.getAverageRating() > 4 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+            <h:form><h:commandLink action="#{recipes.selectRecipe(recipe)}" class="list-group-item">
+                <div class="media col-md-3">
+                  <figure class="pull-left">
+                    <p:graphicImage styleClass="media-object img-rounded img-responsive beer-image" value="#{imagerender.image}">
+                      <f:param name="filename" value="#{recipe.picture}"></f:param>
+                    </p:graphicImage>
+                    <!--<img class="media-object img-rounded img-responsive beer-image" src="img/atomic.jpg" alt="placehold.it/350x250" /> -->
+                  </figure>
                 </div>
-                <p> Média #{recipe.getAverageRating()} <small> / </small> 5 </p>
-            </div>
-          </h:outputLink>
+                <div class="col-md-6">
+                  <h4 class="list-group-item-heading"> <h:outputText value="#{recipe.name}" /> </h4>
+                  <p class="list-group-item-text"> <h:outputText value="#{recipe.description}" />
+                  </p>
+                </div>
+                <div class="col-md-3 text-center">
+                  <h2> <h:outputText value="#{recipe.ratings.size()}"/> <small> Votos </small></h2>
+                  <div class="btn btn-primary btn-lg btn-block">Vote agora!</div>
+                  <div class="stars">
+                    <span class="glyphicon #{recipe.getAverageRating() > 0 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+                    <span class="glyphicon #{recipe.getAverageRating() > 1 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+                    <span class="glyphicon #{recipe.getAverageRating() > 2 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+                    <span class="glyphicon #{recipe.getAverageRating() > 3 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+                    <span class="glyphicon #{recipe.getAverageRating() > 4 ? 'glyphicon-star' : 'glyphicon-star-empty'}" />
+                  </div>
+                  <p> Média #{recipe.getAverageRating()} <small> / </small> 5 </p>
+              </div>
+            </h:commandLink></h:form>
 
         </div>
         </ui:repeat>
