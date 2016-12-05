@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/DEV-WEB-INTELLIJ"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="Tomcat 9.0.0.M11" scope="PROVIDED"/>
+	<levels>
+		<level name="Tomcat 9.0.0.M11" value="application_server_libraries"/>
+		<level name="Mojarra-2.2.1" value="project"/>
+		<level name="PrimeFaces-5.2" value="project"/>
+		<level name="postgresql-9.4.1211.jre6" value="project"/>
+		<level name="commons-io-2.5-javadoc" value="project"/>
+		<level name="commons-io-2.5" value="project"/>
+	</levels>
+</component>

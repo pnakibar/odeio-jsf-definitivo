@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Tomcat 9.0.0.M11"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Mojarra-2.2.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/PrimeFaces-5.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/postgresql-9.4.1211.jre6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/commons-io-2.5-javadoc"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/commons-io-2.5"/>
+	<classpathentry kind="output" path="out/production/DEV-WEB-INTELLIJ"/>
+</classpath>
