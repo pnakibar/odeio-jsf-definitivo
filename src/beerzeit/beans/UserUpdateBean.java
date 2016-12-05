@@ -5,6 +5,7 @@ import beerzeit.model.Usuario;
 import org.primefaces.model.UploadedFile;
 
 import javax.annotation.PostConstruct;
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
@@ -42,6 +43,7 @@ public class UserUpdateBean {
         newUsername = null;
         newPassword = null;
         newAvatar = null;
+        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Atualizado com sucesso!", ""));
     }
 
     public String getNewName() {
